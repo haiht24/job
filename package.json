@@ -1,0 +1,14 @@
+{
+  "name": "Health-jobs",
+  "version": "0.0.0",
+  "description": "",
+  "author": "HaiHT",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "crawler": "^1.0.4",
+    "node-fs": "^0.1.7",
+    "request": "^2.65.0",
+    "mongoose": "^4.9.4"
+  }
+}
