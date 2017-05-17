@@ -340,19 +340,19 @@ function addJobsToWordpress() {
     request.post({url: endpoint, form: form, json: true}, function (err,res,body) {
         if (!err && res.statusCode === 200) {
             console.log(body);
-            // remove index 0 from array
-            console.log(jobsJSON.length);
-            jobsJSON.splice(0, 1);
-            console.log('No %s', countProcessingJob);
-            console.timeEnd('timeProcessingJob');
-            countProcessingJob++;
-            addJobsToWordpress();
         }
         if(res.statusCode !== 200 || err){
             console.log(res.statusCode);
-            console.log(jobsJSON[0]);
-            process.exit();
+            // console.log(jobsJSON[0]);
+            // process.exit();
         }
+        // remove index 0 from array
+        console.log('remain jobs %s', jobsJSON.length);
+        jobsJSON.splice(0, 1);
+        console.log('No %s', countProcessingJob);
+        console.timeEnd('timeProcessingJob');
+        countProcessingJob++;
+        addJobsToWordpress();
     });
 }
 
