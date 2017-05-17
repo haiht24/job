@@ -343,6 +343,9 @@ function addJobsToWordpress() {
             // remove index 0 from array
             console.log(jobsJSON.length);
             jobsJSON.splice(0, 1);
+            console.log('No %s', countProcessingJob);
+            console.timeEnd('timeProcessingJob');
+            countProcessingJob++;
             addJobsToWordpress();
         }
         if(res.statusCode !== 200 || err){
@@ -447,6 +450,8 @@ live = true;
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
+var countProcessingJob = 1;
+console.time('timeProcessingJob');
 addJobsToWordpress();
 
 // addCities();
