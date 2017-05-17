@@ -300,7 +300,7 @@ function schedulerBuildJSONJobs() {
                 }
 
                 // stop here to test
-                // if(countCurrentEmployer === 2){
+                // if(countCurrentEmployer === 20){
                 //     writeJSON('array-jobs-will-add-to-wordpress.json', arrJobs, true);
                 //     console.timeEnd('buildJSONJobsAddToWordpress');
                 // }
@@ -326,16 +326,25 @@ function addJobsToWordpress() {
         var endpoint = 'http://healthcareerslist.com/wp-admin/admin-ajax.php';
     else
         var endpoint = 'http://localhost:8080/health/wp-admin/admin-ajax.php';
-
     // exit when finish
     if(typeof jobsJSON[0] === 'undefined'){
         console.log('done');
         process.exit();
     }
+    // send 10 jobs per request
+    var sendArrayJobs = [];
+    var limit = jobsJSON.length >= sendLimitJobsPerRequest ? sendLimitJobsPerRequest : jobsJSON.length;
+    for(var i=0;i<limit;i++){
+        // console.log(jobsJSON[i].jobId);
+        sendArrayJobs.push(jobsJSON[i]);
+    }
+    // process.exit();
+    console.log('sending %s jobs to server', sendArrayJobs.length);
 
     var form = {
         action: 'api_add_job',
-        job: jobsJSON[0]
+        // job: jobsJSON[0]
+        job: sendArrayJobs
     };
     request.post({url: endpoint, form: form, json: true}, function (err,res,body) {
         if (!err && res.statusCode === 200) {
@@ -343,15 +352,14 @@ function addJobsToWordpress() {
         }
         if(res.statusCode !== 200 || err){
             console.log(res.statusCode);
-            // console.log(jobsJSON[0]);
-            // process.exit();
         }
         // remove index 0 from array
+        jobsJSON.splice(0, limit);
         console.log('remain jobs %s', jobsJSON.length);
-        jobsJSON.splice(0, 1);
         console.log('No %s', countProcessingJob);
         console.timeEnd('timeProcessingJob');
-        countProcessingJob++;
+        countProcessingJob += limit;
+
         addJobsToWordpress();
     });
 }
@@ -444,13 +452,14 @@ function deleteAll() {
 // getJobDetail();
 
 //5
-live = true;
+// live = true;
 // schedulerAddUsers();
 
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
-var countProcessingJob = 1;
+var sendLimitJobsPerRequest = 50;
+var countProcessingJob = sendLimitJobsPerRequest;
 console.time('timeProcessingJob');
 addJobsToWordpress();
 
