@@ -452,7 +452,7 @@ function deleteAll() {
 // getJobDetail();
 
 //5
-// live = true;
+live = true;
 // schedulerAddUsers();
 
 // console.time('buildJSONJobsAddToWordpress');
