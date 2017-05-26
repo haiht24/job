@@ -511,12 +511,15 @@ function nightmare(link) {
 //4 : khoang 20 phut
 // getJobDetail();
 
+// 5 add epl to SmartJobBoard
 var JB = require('./smart-job-board.js');
 JB.addEplToSmartJobsBoard();
 
+// 6 build file json list jobs will add to SmartJobBoard
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
+// 7 add jobs to SmartJobBoard
 // JB.addJobsToJobBoard();
 
 // #############################End step########################
