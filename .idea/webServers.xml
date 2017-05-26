@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="beb92081-7d26-4191-ae5e-cbabdabdc51a" name="GCE Apache Of HaiHT" url="http://104.155.206.237">
+        <fileTransfer host="104.155.206.237" port="22" privateKey="$USER_HOME$/.ssh/google_compute_engine" rootFolder="/home/haiht/job" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -344,7 +344,7 @@ function schedulerBuildJSONJobs() {
             }
 
         }).limit(1);
-    }, wait*1000);
+    }, waitJob*1000);
 }
 
 var jobsJSON = require('./json-files/' + 'array-jobs-will-add-to-wordpress.json');
@@ -496,11 +496,6 @@ function nightmare(link) {
 }
 // nightmare('http://www.healthjobsnationwide.com/index.php?action=show_all&co_display_name=5894#co_display_name=5894');
 
-var JB = require('./smart-job-board.js');
-// JB.addEplToSmartJobsBoard();
-JB.addJobsToJobBoard();
-// JB.updateJobPostedDate();
-
 // ########################################################################################################
 //1 : khoang 43s
 
@@ -516,12 +511,20 @@ JB.addJobsToJobBoard();
 //4 : khoang 20 phut
 // getJobDetail();
 
-//5
+console.time('buildJSONJobsAddToWordpress');
+schedulerBuildJSONJobs();
+
+var JB = require('./smart-job-board.js');
+// JB.addEplToSmartJobsBoard();
+// JB.addJobsToJobBoard();
+
+// #############################End step########################
+
+//5 bo qua vi ko add vao wordpress nua
 // live = true;
 // schedulerAddUsers();
 
-// console.time('buildJSONJobsAddToWordpress');
-// schedulerBuildJSONJobs();
+
 
 // var sendLimitJobsPerRequest = 50;
 // var countProcessingJob = sendLimitJobsPerRequest;

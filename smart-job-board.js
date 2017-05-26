@@ -1173,38 +1173,6 @@ function sliceAndContinueAddJob() {
     addJobs();
 }
 
-// update job posted date
-function updateJobPostedDate() {
-    console.time('get100Jobs');
-    var api = 'https://health.mysmartjobboard.com/api/jobs?api_key='+apiKey+'&limit=100';
-    request(api, function (error, response, body) {
-        body = JSON.parse(body);
-        var jobs = body.jobs;
-
-        if(jobs.length > 0){
-            for(var i=0;i<jobs.length;i++){
-                var jobId = '';
-                for(var j=0;j<jobs[i].custom_fields.length;j++){
-                    if(jobs[i].custom_fields[j].name === 'Source Job Id'){
-                        jobId = jobs[i].custom_fields[j].value;
-                    }
-                }
-                Epl.find({jobs: {$elemMatch: {jobId: jobId} } }, function (err, el) {
-                    if(el){
-                        if(el.jobs.length > 0){
-
-                        }
-                    }
-                });
-            }
-        }
-
-
-        console.timeEnd('get100Jobs');
-        // process.exit();
-    });
-}
-
 module.exports = {
     addEplToSmartJobsBoard: function () {
         console.time('addEpmployerToSmartJob');
@@ -1217,8 +1185,5 @@ module.exports = {
         }catch (ex){
             writeJSON(filePathTrackingJobsInserted, trackingJobsInserted, true);
         }
-    },
-    updateJobPostedDate: function () {
-        updateJobPostedDate();
     }
 };

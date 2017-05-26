@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/jobs-list.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/healthecareers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-job-board.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jobs-list.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/link-jobs-will-crawl-data.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" afterPath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employer.js" afterPath="$PROJECT_DIR$/models/Employer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-job-board.js" afterPath="$PROJECT_DIR$/smart-job-board.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
+            <state relative-caret-position="191">
+              <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="514" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
                 <element signature="e#811#1106#0" expanded="false" />
@@ -50,20 +44,17 @@
                 <element signature="e#1380#4885#0" expanded="false" />
                 <element signature="e#4315#4649#0" expanded="false" />
                 <element signature="n#!!block;n#nightmare#0" expanded="false" />
-                <element signature="e#16928#16931#0" expanded="false" />
-                <element signature="e#16973#17020#0" expanded="false" />
-                <element signature="e#17051#17087#0" expanded="false" />
-                <element signature="e#17205#17220#0" expanded="false" />
+                <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
+            <state relative-caret-position="146">
+              <caret line="1049" column="7" lean-forward="false" selection-start-line="1049" selection-start-column="7" selection-end-line="1049" selection-end-column="7" />
               <folding>
                 <element signature="e#752#31272#0" expanded="false" />
                 <element signature="e#762#2312#0" expanded="false" />
@@ -87,8 +78,17 @@
                 <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
                 <element signature="n#!!block;n#updateInserted#0" expanded="false" />
                 <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-                <element signature="n#!!block;n#updateJobPostedDate#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="316" column="11" lean-forward="false" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,9 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>res.statusCode</find>
-      <find>writeJSON</find>
-      <find>splice</find>
       <find>employerId</find>
       <find>addJobsToWordpress</find>
       <find>jobsJSON</find>
@@ -127,6 +124,9 @@
       <find>return</find>
       <find>Epl</find>
       <find>dataCleaned</find>
+      <find>schedulerAddUsers</find>
+      <find>schedulerBuildJSONJobs</find>
+      <find>wordpress</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -181,8 +181,9 @@
         <option value="$PROJECT_DIR$/models/healthecareers.js" />
         <option value="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
         <option value="$PROJECT_DIR$/json-files/arrayEplInserted.json" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/smart-job-board.js" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -269,10 +270,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="PHP&#10;JavaScript 1.5&#10;HTML&#10;AngularJS" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -401,12 +407,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="7849000" />
+      <workItem from="1495762465836" duration="10561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180308000" />
+    <option name="totallyTimeSpent" value="183020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,14 +427,15 @@
     <frame x="0" y="23" width="1280" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17447495" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447495" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22461538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -493,10 +500,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -534,10 +538,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -575,10 +576,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -616,10 +614,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -657,10 +652,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -705,10 +697,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -739,10 +728,7 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -891,30 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-            <element signature="e#811#1106#0" expanded="false" />
-            <element signature="e#966#1102#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="e#1380#4885#0" expanded="false" />
-            <element signature="e#4315#4649#0" expanded="false" />
-            <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="e#16928#16931#0" expanded="false" />
-            <element signature="e#16973#17020#0" expanded="false" />
-            <element signature="e#17051#17087#0" expanded="false" />
-            <element signature="e#17205#17220#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smart-job-board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
+        <state relative-caret-position="146">
+          <caret line="1049" column="7" lean-forward="false" selection-start-line="1049" selection-start-column="7" selection-end-line="1049" selection-end-column="7" />
           <folding>
             <element signature="e#752#31272#0" expanded="false" />
             <element signature="e#762#2312#0" expanded="false" />
@@ -938,7 +904,23 @@
             <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
             <element signature="n#!!block;n#updateInserted#0" expanded="false" />
             <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-            <element signature="n#!!block;n#updateJobPostedDate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="514" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
