@@ -810,7 +810,7 @@ function dataCleaned(job) {
         var arrDate = job.date.split('/');
         var convertedDate = '';
         if(arrDate.length === 3){
-            convertedDate = arrDate[2] + '-' + arrDate[1] + '-' + arrDate[0] + ' 00:00:00';
+            convertedDate = arrDate[2] + '-' + arrDate[0] + '-' + arrDate[1] + ' 00:00:00';
         }
         job.date = convertedDate;
     }
@@ -1097,11 +1097,10 @@ function addJobs() {
     }
 
     job = dataCleaned(job);
-
     var eplId = 0;
     for(var i=0;i<fileArrayEplInserted.length;i++){
         var el = fileArrayEplInserted[i];
-        if(job.employerId === el.eplId){
+        if(parseInt(job.employerId) === parseInt(el.eplId)){
             eplId = el.jbId;
         }
     }
