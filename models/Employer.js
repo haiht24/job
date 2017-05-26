@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
 var employerSchema = new Schema({
     eplId: {type: Number, required: true, unique: true},
     name: String,
+    emailsContact: String,
     about: String,
     jobs: Array,
     logo: String,

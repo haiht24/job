@@ -5,10 +5,12 @@
   "author": "HaiHT",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.54.0",
     "cheerio": "^0.19.0",
     "crawler": "^1.0.4",
+    "mongoose": "^4.9.4",
     "node-fs": "^0.1.7",
     "request": "^2.65.0",
-    "mongoose": "^4.9.4"
+    "nightmare": "^2.10.0"
   }
 }

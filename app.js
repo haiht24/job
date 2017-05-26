@@ -7,8 +7,8 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://127.0.0.1:27017/jobs");
 
-var fileLinksJobs = 'link-jobs-will-crawl-data.json';
-var fileJobsList = 'jobs-list.json';
+var fileLinksJobs = './json-files/link-jobs-will-crawl-data.json';
+var fileJobsList = './json-files/jobs-list.json';
 
 var live = false;
 
@@ -33,8 +33,16 @@ var writeJSON = function (filePath, data, exitApp) {
     });
 };
 
-// Get employer list
-var insertEmployeers = function () {
+function extractEmails (text){
+    var result = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+    if(result)
+        return result;
+    else
+        return '';
+}
+
+// Get and insert employer list to mongodb
+var insertEmployersToMongoDb = function () {
     // Get employer detail
     var epl;
     var arrEplDetails = [];
@@ -47,6 +55,25 @@ var insertEmployeers = function () {
             var t = thisUrl.split('/');
             var eplId = t[t.length - 1];
             var about = $('#empabout').html();
+            var emailsContact = '';
+            if(about){
+                emailsContact = extractEmails(about);
+                if(emailsContact){
+                    if(emailsContact.length > 1){
+                        var emailsContact = emailsContact.filter(function(elem, index, self) {
+                            var lastChar = elem[elem.length - 1];
+                            // remove dot . in last char
+                            if(lastChar === '.'){
+                                elem = elem.slice(0, -1);
+                            }
+                            return index == self.indexOf(elem);
+                        })
+                    }else{
+                        emailsContact = [emailsContact[0].slice(0, -1)];
+                    }
+                    emailsContact = emailsContact.join();
+                }
+            }
             var etc = $('.job-title-etc h2').text();
             var name = $('.job-title-etc h1').text();
             var logoUrl = $('.employer-logo img').attr('src');
@@ -58,6 +85,7 @@ var insertEmployeers = function () {
             epl = {
                 eplId: eplId,
                 name: name,
+                emailsContact: emailsContact,
                 about: about,
                 logo: logo,
                 banner: banner,
@@ -188,7 +216,6 @@ var getListJobs = function () {
     // var temp = ['https://www.healthecareers.com/search-jobs/?empid=349519&specialty=*&ps=100&pg=1'];
     // crl.queue(temp);
     crl.on('drain',function(){
-        console.log(arr);
         console.log(arr.length);
         writeJSON(fileJobsList, arr, true);
     });
@@ -268,22 +295,23 @@ var getJobDetail = function () {
 };
 
 // wait seconds
-var wait = 1;
-function schedulerAddUsers() {
-    setTimeout(function () {
-        Epl.find({inserted: 0}, function (err, obj) {
-            if(err) throw err;
-            if(obj.length){
-                obj = obj[0];
-                console.log('Inserting employer %s', obj.eplId);
-                addUserToWordpress(obj);
-            }else{
-                console.log('Finish add users');
-                process.exit();
-            }
-        }).limit(1);
-    }, wait*1000);
-}
+// var wait = 1;
+// function schedulerAddUsers() {
+//     setTimeout(function () {
+//         Epl.find({inserted: 0}, function (err, obj) {
+//             if(err) throw err;
+//             if(obj.length){
+//                 obj = obj[0];
+//                 console.log('Inserting employer %s', obj.eplId);
+//                 // addUserToWordpress(obj);
+//                 JB.addEployer(obj);
+//             }else{
+//                 console.log('Finish add users');
+//                 process.exit();
+//             }
+//         }).limit(1);
+//     }, wait*1000);
+// }
 
 var arrJobs = [];
 var waitJob = 0;
@@ -301,7 +329,7 @@ function schedulerBuildJSONJobs() {
 
                 // stop here to test
                 // if(countCurrentEmployer === 20){
-                //     writeJSON('array-jobs-will-add-to-wordpress.json', arrJobs, true);
+                //     writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
                 //     console.timeEnd('buildJSONJobsAddToWordpress');
                 // }
                 // end
@@ -311,7 +339,7 @@ function schedulerBuildJSONJobs() {
                 schedulerBuildJSONJobs();
             }else{
                 console.log('array %s', arrJobs.length);
-                writeJSON('array-jobs-will-add-to-wordpress.json', arrJobs, true);
+                writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
                 console.timeEnd('buildJSONJobsAddToWordpress');
             }
 
@@ -319,7 +347,7 @@ function schedulerBuildJSONJobs() {
     }, wait*1000);
 }
 
-var jobsJSON = require('./' + 'array-jobs-will-add-to-wordpress.json');
+var jobsJSON = require('./json-files/' + 'array-jobs-will-add-to-wordpress.json');
 function addJobsToWordpress() {
     var request = require('request');
     if(live)
@@ -389,18 +417,19 @@ function addUserToWordpress(obj) {
             console.log(body);
             console.log('update inserted %s', obj.eplId);
             updateInserted(obj.eplId, 1, true);
+            process.exit();
             schedulerAddUsers();
         }
     });
 }
 
-function updateInserted(eplId, inserted, printMessage) {
-    Epl.findOneAndUpdate({eplId: eplId}, { inserted: inserted }, function(err, epl) {
-        if (err) throw err;
-        if(printMessage === true)
-            console.log('updated inserted status %s', eplId);
-    });
-}
+// function updateInserted(eplId, inserted, printMessage) {
+//     Epl.findOneAndUpdate({eplId: eplId}, { inserted: inserted }, function(err, epl) {
+//         if (err) throw err;
+//         if(printMessage === true)
+//             console.log('updated inserted status %s', eplId);
+//     });
+// }
 
 function addCities() {
     if(live)
@@ -436,32 +465,68 @@ function deleteAll() {
     });
 }
 
+function nightmare(link) {
+    var Nightmare = require('nightmare');
+    var userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36";
+    var nm = Nightmare({
+        show: true,
+        // openDevTools: {
+        //     mode: 'detach'
+        // }
+    });
+    nm.useragent(userAgent)
+        .goto(link)
+        // .wait()
+        .evaluate(function () {
+            return document.body.innerHTML;
+        })
+        .then(function (result) {
+            var $ = cheerio.load(result);
+            // var voucher = $('.np-voucher').html();
+            // var thumbnail = '';
+            // $('.itm-img').each(function (index,el) {
+            //     if(index === $('.itm-img').length - 1)
+            //         thumbnail = $(this).attr('src');
+            // });
+            // console.log(voucher,thumbnail);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+}
+// nightmare('http://www.healthjobsnationwide.com/index.php?action=show_all&co_display_name=5894#co_display_name=5894');
+
+var JB = require('./smart-job-board.js');
+// JB.addEplToSmartJobsBoard();
+JB.addJobsToJobBoard();
+// JB.updateJobPostedDate();
+
 // ########################################################################################################
-//1
+//1 : khoang 43s
 
 // console.time('getListEpl');
-// insertEmployeers();
+// insertEmployersToMongoDb();
 
-//2
+//2 : khoang 80s
 // buildJSONJobList();
 
 //3
 // getListJobs();
 
-//4
+//4 : khoang 20 phut
 // getJobDetail();
 
 //5
-live = true;
+// live = true;
 // schedulerAddUsers();
 
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
-var sendLimitJobsPerRequest = 50;
-var countProcessingJob = sendLimitJobsPerRequest;
-console.time('timeProcessingJob');
-addJobsToWordpress();
+// var sendLimitJobsPerRequest = 50;
+// var countProcessingJob = sendLimitJobsPerRequest;
+// console.time('timeProcessingJob');
+// addJobsToWordpress();
 
 // addCities();
 // deleteAll();

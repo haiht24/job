@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/jobs-list.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/healthecareers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-job-board.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jobs-list.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/link-jobs-will-crawl-data.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" afterPath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employer.js" afterPath="$PROJECT_DIR$/models/Employer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,16 +37,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="455" column="12" lean-forward="true" selection-start-line="455" selection-start-column="12" selection-end-line="455" selection-end-column="12" />
+            <state relative-caret-position="136">
+              <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
               <folding>
-                <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
+                <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+                <element signature="e#811#1106#0" expanded="false" />
+                <element signature="e#966#1102#0" expanded="false" />
+                <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+                <element signature="e#1380#4885#0" expanded="false" />
+                <element signature="e#4315#4649#0" expanded="false" />
+                <element signature="n#!!block;n#nightmare#0" expanded="false" />
+                <element signature="e#16928#16931#0" expanded="false" />
+                <element signature="e#16973#17020#0" expanded="false" />
+                <element signature="e#17051#17087#0" expanded="false" />
+                <element signature="e#17205#17220#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smart-job-board.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
+              <folding>
+                <element signature="e#752#31272#0" expanded="false" />
+                <element signature="e#762#2312#0" expanded="false" />
+                <element signature="e#2322#2571#0" expanded="false" />
+                <element signature="e#2581#3391#0" expanded="false" />
+                <element signature="e#3401#13319#0" expanded="false" />
+                <element signature="e#3469#13309#0" expanded="false" />
+                <element signature="e#13329#15822#0" expanded="false" />
+                <element signature="e#15832#19464#0" expanded="false" />
+                <element signature="e#19474#23232#0" expanded="false" />
+                <element signature="e#23242#24954#0" expanded="false" />
+                <element signature="e#24964#26584#0" expanded="false" />
+                <element signature="e#26594#27144#0" expanded="false" />
+                <element signature="e#27154#29919#0" expanded="false" />
+                <element signature="e#29929#30391#0" expanded="false" />
+                <element signature="e#30401#30656#0" expanded="false" />
+                <element signature="e#30666#31266#0" expanded="false" />
+                <element signature="e#33246#33541#0" expanded="false" />
+                <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+                <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+                <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
                 <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-                <element signature="n#!!block;n#addCities#0" expanded="false" />
-                <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+                <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
+                <element signature="n#!!block;n#updateJobPostedDate#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,36 +97,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getEmployeers</find>
-      <find>etc</find>
-      <find>cs_user_img</find>
-      <find>user_img</find>
-      <find>speci</find>
-      <find>dele</find>
-      <find>addUser()</find>
-      <find>getJobDetail</find>
-      <find>endpoint</find>
-      <find>http://healthcareerslist.com/wp-admin/admin-ajax.php</find>
-      <find>insertEmployeers</find>
-      <find>healthecareers</find>
-      <find>healthcareerslist</find>
-      <find>processing</find>
-      <find>schedulerAddUserAndJob</find>
-      <find>updateInserted</find>
-      <find>schedulerAddJobs</find>
+      <find>res.statusCode</find>
       <find>writeJSON</find>
-      <find>fileLinksJobs</find>
-      <find>jobs</find>
-      <find>array-jobs-will-add-to-wordpress.json</find>
-      <find>throw</find>
-      <find>if(obj</find>
+      <find>splice</find>
       <find>employerId</find>
-      <find>addUserToWordpress</find>
-      <find>array-jobs-will-add-to-wordpress</find>
       <find>addJobsToWordpress</find>
-      <find>process.exit()</find>
-      <find>schedulerBuildJSONJobs</find>
-      <find>countProcessingJob</find>
+      <find>jobsJSON</find>
+      <find>Physician</find>
+      <find>,</find>
+      <find>,'</find>
+      <find>\n</find>
+      <find>'</find>
+      <find>)</find>
+      <find>(</find>
+      <find>arrayEpl</find>
+      <find>arrayEplInserted.json</find>
+      <find>require</find>
+      <find>crlGetEplDetail</find>
+      <find>insertEmployeers</find>
+      <find>insertEmployersToMongoDb</find>
+      <find>Family Medicine with Obstetrics</find>
+      <find>f59b583aa1b4ada293a40f17c10adabc</find>
+      <find>title</find>
+      <find>arrInsertedEpl</find>
+      <find>job.description.indexOf</find>
+      <find>exist</find>
+      <find>process.exit();</find>
+      <find>.json</find>
+      <find>return</find>
+      <find>Epl</find>
+      <find>dataCleaned</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -91,6 +142,17 @@
       <replace>schedulerBuildJSONJobs</replace>
       <replace>addUserToWordpress(</replace>
       <replace>jobsJSON</replace>
+      <replace>filePathWithName</replace>
+      <replace>',</replace>
+      <replace>,'</replace>
+      <replace>','</replace>
+      <replace>',\n</replace>
+      <replace>','\n</replace>
+      <replace>'</replace>
+      <replace>&quot;,</replace>
+      <replace>addEmployer</replace>
+      <replace>&quot;</replace>
+      <replace>insertEmployersToMongoDb</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,15 +162,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/models/Employerr.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/models/Employeer.js" />
-        <option value="$PROJECT_DIR$/link-jobs-will-crawl-data.json" />
         <option value="$PROJECT_DIR$/jobs-list.json" />
-        <option value="$PROJECT_DIR$/models/Employer.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.js" />
         <option value="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/models/Employer.js" />
+        <option value="$PROJECT_DIR$/link-jobs-will-crawl-data.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.php" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/models/healthecareers.js" />
+        <option value="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
+        <option value="$PROJECT_DIR$/json-files/arrayEplInserted.json" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/smart-job-board.js" />
       </list>
     </option>
   </component>
@@ -143,7 +217,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -182,7 +258,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="json-files" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,6 +272,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="PHP&#10;JavaScript 1.5&#10;HTML&#10;AngularJS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/json-files" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -292,6 +374,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT,HIDE_INHERITED,SHOW_FIELDS" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="" />
@@ -312,12 +397,16 @@
       <workItem from="1494736239289" duration="15468000" />
       <workItem from="1494897377786" duration="17093000" />
       <workItem from="1494939326908" duration="9420000" />
-      <workItem from="1494997115857" duration="3586000" />
+      <workItem from="1494997115857" duration="4379000" />
+      <workItem from="1495073497120" duration="391000" />
+      <workItem from="1495102657822" duration="464000" />
+      <workItem from="1495342513279" duration="54732000" />
+      <workItem from="1495762465836" duration="7849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116079000" />
+    <option name="totallyTimeSpent" value="180308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,15 +421,15 @@
     <frame x="0" y="23" width="1280" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17851374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17447495" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24615385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -358,126 +447,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/smart-job-board.js</url>
+          <line>1146</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1201004" lean-forward="false" selection-start-line="0" selection-start-column="1201004" selection-end-line="0" selection-end-column="1201004" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44187" lean-forward="false" selection-start-line="0" selection-start-column="44187" selection-end-line="0" selection-end-column="44187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
           <caret line="544" column="1" lean-forward="false" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
@@ -496,22 +486,29 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
           <caret line="544" column="1" lean-forward="false" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
@@ -530,22 +527,29 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
           <caret line="544" column="1" lean-forward="false" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
@@ -564,22 +568,29 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
           <caret line="544" column="1" lean-forward="false" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
@@ -598,22 +609,29 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
           <caret line="544" column="1" lean-forward="true" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
@@ -632,15 +650,22 @@
         <state relative-caret-position="4278">
           <caret line="216" column="49" lean-forward="false" selection-start-line="216" selection-start-column="49" selection-end-line="216" selection-end-column="49" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12443">
           <caret line="541" column="1" lean-forward="false" selection-start-line="541" selection-start-column="1" selection-end-line="541" selection-end-column="1" />
@@ -654,7 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298609">
           <caret line="12983" column="79" lean-forward="true" selection-start-line="12983" selection-start-column="79" selection-end-line="12983" selection-end-column="79" />
@@ -673,10 +698,17 @@
         <state relative-caret-position="805">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -700,43 +732,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/check-out-0.log" />
-    <entry file="file://$PROJECT_DIR$/link-jobs-will-crawl-data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="0" column="44187" lean-forward="false" selection-start-line="0" selection-start-column="44187" selection-end-line="0" selection-end-column="44187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs-list.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="0" column="1200969" lean-forward="false" selection-start-line="0" selection-start-column="1200969" selection-end-line="0" selection-end-column="1200969" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -751,35 +762,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logo-demo-health.jpg" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6069" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Employer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/healthecareers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="115">
+          <caret line="0" column="660" lean-forward="true" selection-start-line="0" selection-start-column="660" selection-end-line="0" selection-end-column="660" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/trackingJobsInserted.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/arrayEplInserted.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="455" column="12" lean-forward="true" selection-start-line="455" selection-start-column="12" selection-end-line="455" selection-end-column="12" />
+        <state relative-caret-position="136">
+          <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#addUserToWordpress#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="e#16928#16931#0" expanded="false" />
+            <element signature="e#16973#17020#0" expanded="false" />
+            <element signature="e#17051#17087#0" expanded="false" />
+            <element signature="e#17205#17220#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-job-board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
+          <folding>
+            <element signature="e#752#31272#0" expanded="false" />
+            <element signature="e#762#2312#0" expanded="false" />
+            <element signature="e#2322#2571#0" expanded="false" />
+            <element signature="e#2581#3391#0" expanded="false" />
+            <element signature="e#3401#13319#0" expanded="false" />
+            <element signature="e#3469#13309#0" expanded="false" />
+            <element signature="e#13329#15822#0" expanded="false" />
+            <element signature="e#15832#19464#0" expanded="false" />
+            <element signature="e#19474#23232#0" expanded="false" />
+            <element signature="e#23242#24954#0" expanded="false" />
+            <element signature="e#24964#26584#0" expanded="false" />
+            <element signature="e#26594#27144#0" expanded="false" />
+            <element signature="e#27154#29919#0" expanded="false" />
+            <element signature="e#29929#30391#0" expanded="false" />
+            <element signature="e#30401#30656#0" expanded="false" />
+            <element signature="e#30666#31266#0" expanded="false" />
+            <element signature="e#33246#33541#0" expanded="false" />
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
             <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="n#!!block;n#addCities#0" expanded="false" />
-            <element signature="n#!!block;n#deleteAll#0" expanded="false" />
+            <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
+            <element signature="n#!!block;n#updateJobPostedDate#0" expanded="false" />
           </folding>
         </state>
       </provider>
