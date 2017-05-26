@@ -497,6 +497,7 @@ function nightmare(link) {
 // nightmare('http://www.healthjobsnationwide.com/index.php?action=show_all&co_display_name=5894#co_display_name=5894');
 
 // ########################################################################################################
+var JB = require('./smart-job-board.js');
 //1 : khoang 43s
 
 // console.time('getListEpl');
@@ -512,15 +513,14 @@ function nightmare(link) {
 // getJobDetail();
 
 // 5 add epl to SmartJobBoard
-var JB = require('./smart-job-board.js');
-JB.addEplToSmartJobsBoard();
+// JB.addEplToSmartJobsBoard();
 
 // 6 build file json list jobs will add to SmartJobBoard
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
 // 7 add jobs to SmartJobBoard
-// JB.addJobsToJobBoard();
+JB.addJobsToJobBoard();
 
 // #############################End step########################
 

@@ -1065,12 +1065,14 @@ function addJobs() {
     }
     var job = jobsJSON[0];
     console.log('tracking ', trackingJobsInserted.length);
-    for(var i=0;i<trackingJobsInserted.length;i++){
-        var temp = trackingJobsInserted[i];
-        if(job.jobId === temp.sourceJobId){
-            console.log('This job already inserted. Skip');
-            sliceAndContinueAddJob();
-            return;
+    if(trackingJobsInserted.length > 0){
+        for(var i=0;i<trackingJobsInserted.length;i++){
+            var temp = trackingJobsInserted[i];
+            if(job.jobId === temp.sourceJobId){
+                console.log('This job already inserted. Skip');
+                sliceAndContinueAddJob();
+                return;
+            }
         }
     }
 
