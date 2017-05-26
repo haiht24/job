@@ -513,14 +513,14 @@ var JB = require('./smart-job-board.js');
 // getJobDetail();
 
 // 5 add epl to SmartJobBoard
-// JB.addEplToSmartJobsBoard();
+JB.addEplToSmartJobsBoard();
 
 // 6 build file json list jobs will add to SmartJobBoard
 // console.time('buildJSONJobsAddToWordpress');
 // schedulerBuildJSONJobs();
 
 // 7 add jobs to SmartJobBoard
-JB.addJobsToJobBoard();
+// JB.addJobsToJobBoard();
 
 // #############################End step########################
 

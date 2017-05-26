@@ -1035,13 +1035,17 @@ function addEmployer(obj) {
         if (!err && res.statusCode === 201) {
             console.log('successful');
             body = JSON.parse(body);
-            console.log(body.id);
+            var eplId = 0;
+            for(var i=0;i<body.custom_fields.length;i++){
+                var t = body.custom_fields[i];
+                if(t.name === 'Source Employer Id'){
+                    eplId = parseInt(t.value);
+                }
+            }
             arrInsertedEpl.push({
                 jbId: body.id,
-                eplId: body.website
+                eplId: eplId
             });
-            // console.log(body);
-            // process.exit();return;
             updateInserted(obj.eplId, 1);
             schedulerAddUsers();
         }else{
