@@ -423,13 +423,13 @@ function addUserToWordpress(obj) {
     });
 }
 
-// function updateInserted(eplId, inserted, printMessage) {
-//     Epl.findOneAndUpdate({eplId: eplId}, { inserted: inserted }, function(err, epl) {
-//         if (err) throw err;
-//         if(printMessage === true)
-//             console.log('updated inserted status %s', eplId);
-//     });
-// }
+function updateInserted(eplId, inserted, printMessage) {
+    Epl.findOneAndUpdate({eplId: eplId}, { inserted: inserted }, function(err, epl) {
+        if (err) throw err;
+        if(printMessage === true)
+            console.log('updated inserted status %s', eplId);
+    });
+}
 
 function addCities() {
     if(live)
@@ -511,11 +511,12 @@ function nightmare(link) {
 //4 : khoang 20 phut
 // getJobDetail();
 
-console.time('buildJSONJobsAddToWordpress');
-schedulerBuildJSONJobs();
-
 var JB = require('./smart-job-board.js');
-// JB.addEplToSmartJobsBoard();
+JB.addEplToSmartJobsBoard();
+
+// console.time('buildJSONJobsAddToWordpress');
+// schedulerBuildJSONJobs();
+
 // JB.addJobsToJobBoard();
 
 // #############################End step########################

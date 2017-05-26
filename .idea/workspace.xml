@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-job-board.js" afterPath="$PROJECT_DIR$/smart-job-board.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="514" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="513" column="41" lean-forward="true" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
               <folding>
                 <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
                 <element signature="e#811#1106#0" expanded="false" />
@@ -44,7 +39,6 @@
                 <element signature="e#1380#4885#0" expanded="false" />
                 <element signature="e#4315#4649#0" expanded="false" />
                 <element signature="n#!!block;n#nightmare#0" expanded="false" />
-                <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
               </folding>
             </state>
           </provider>
@@ -53,8 +47,8 @@
       <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="1049" column="7" lean-forward="false" selection-start-line="1049" selection-start-column="7" selection-end-line="1049" selection-end-column="7" />
+            <state relative-caret-position="58">
+              <caret line="942" column="22" lean-forward="true" selection-start-line="942" selection-start-column="22" selection-end-line="942" selection-end-column="22" />
               <folding>
                 <element signature="e#752#31272#0" expanded="false" />
                 <element signature="e#762#2312#0" expanded="false" />
@@ -86,8 +80,8 @@
       <file leaf-file-name="app.js" pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="316" column="11" lean-forward="false" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="11" />
+            <state relative-caret-position="230">
+              <caret line="429" column="60" lean-forward="false" selection-start-line="429" selection-start-column="60" selection-end-line="429" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -97,8 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>employerId</find>
-      <find>addJobsToWordpress</find>
       <find>jobsJSON</find>
       <find>Physician</find>
       <find>,</find>
@@ -126,6 +118,8 @@
       <find>dataCleaned</find>
       <find>schedulerAddUsers</find>
       <find>schedulerBuildJSONJobs</find>
+      <find>waitJob</find>
+      <find>updateInserted</find>
       <find>wordpress</find>
     </findStrings>
     <replaceStrings>
@@ -407,12 +401,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="10561000" />
+      <workItem from="1495762465836" duration="10961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183020000" />
+    <option name="totallyTimeSpent" value="183420000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,7 +494,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -538,7 +531,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -576,7 +568,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -614,7 +605,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -652,7 +642,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -697,7 +686,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -728,7 +716,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -879,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-job-board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="1049" column="7" lean-forward="false" selection-start-line="1049" selection-start-column="7" selection-end-line="1049" selection-end-column="7" />
+        <state relative-caret-position="58">
+          <caret line="942" column="22" lean-forward="true" selection-start-line="942" selection-start-column="22" selection-end-line="942" selection-end-column="22" />
           <folding>
             <element signature="e#752#31272#0" expanded="false" />
             <element signature="e#762#2312#0" expanded="false" />
@@ -910,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="514" selection-end-column="25" />
+        <state relative-caret-position="220">
+          <caret line="513" column="41" lean-forward="true" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
           <folding>
             <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
             <element signature="e#811#1106#0" expanded="false" />
@@ -920,7 +907,6 @@
             <element signature="e#1380#4885#0" expanded="false" />
             <element signature="e#4315#4649#0" expanded="false" />
             <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <marker date="1495792963000" expanded="true" signature="16803:16873" ph="//..." />
           </folding>
         </state>
       </provider>
