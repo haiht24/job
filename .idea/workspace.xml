@@ -47,8 +47,8 @@
       <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="823" column="10" lean-forward="true" selection-start-line="823" selection-start-column="10" selection-end-line="823" selection-end-column="10" />
+            <state relative-caret-position="76">
+              <caret line="829" column="31" lean-forward="true" selection-start-line="829" selection-start-column="31" selection-end-line="829" selection-end-column="31" />
               <folding>
                 <element signature="e#752#31272#0" expanded="false" />
                 <element signature="e#762#2312#0" expanded="false" />
@@ -66,7 +66,7 @@
                 <element signature="e#29929#30391#0" expanded="false" />
                 <element signature="e#30401#30656#0" expanded="false" />
                 <element signature="e#30666#31266#0" expanded="false" />
-                <element signature="e#33264#33559#0" expanded="false" />
+                <element signature="e#33330#33625#0" expanded="false" />
                 <element signature="n#!!block;n#randomEmail#0" expanded="false" />
                 <element signature="n#!!block;n#extractFileName#0" expanded="false" />
                 <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
@@ -401,12 +401,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="11163000" />
+      <workItem from="1495762465836" duration="11239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183622000" />
+    <option name="totallyTimeSpent" value="183698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,7 +452,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/smart-job-board.js</url>
-          <line>1146</line>
+          <line>1150</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -882,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-job-board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="823" column="10" lean-forward="true" selection-start-line="823" selection-start-column="10" selection-end-line="823" selection-end-column="10" />
+        <state relative-caret-position="76">
+          <caret line="829" column="31" lean-forward="true" selection-start-line="829" selection-start-column="31" selection-end-line="829" selection-end-column="31" />
           <folding>
             <element signature="e#752#31272#0" expanded="false" />
             <element signature="e#762#2312#0" expanded="false" />
@@ -901,7 +901,7 @@
             <element signature="e#29929#30391#0" expanded="false" />
             <element signature="e#30401#30656#0" expanded="false" />
             <element signature="e#30666#31266#0" expanded="false" />
-            <element signature="e#33264#33559#0" expanded="false" />
+            <element signature="e#33330#33625#0" expanded="false" />
             <element signature="n#!!block;n#randomEmail#0" expanded="false" />
             <element signature="n#!!block;n#extractFileName#0" expanded="false" />
             <element signature="n#!!block;n#uploadToS3#0" expanded="false" />

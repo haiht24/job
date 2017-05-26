@@ -818,6 +818,8 @@ function dataCleaned(job) {
 }
 
 function extractEmails (text){
+    if(!text)
+        return '';
     var arr = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
     if(arr && arr.length > 0){
         return arr[0];
@@ -826,6 +828,8 @@ function extractEmails (text){
     }
 }
 function extractWebsite(text) {
+    if(!text)
+        return '';
     var arr = text.match(/(((ftp|https?):\/\/)[\-\w@:%_\+.~#?,&\/\/=]+)|((mailto:)?[_.\w-]+@([\w][\w\-]+\.)+[a-zA-Z]{2,3})/g);
     if(arr && arr.length > 0){
         for(var i=0;i<arr.length;i++){
