@@ -1161,8 +1161,8 @@ function addJobs() {
             console.timeEnd('addJobToSmartJob');
             console.log('Count %s | successful! new job id: %s belong to employer id %s',countInsertedJob, body.id, body.employer_id);
 
-            console.log(body);
-            process.exit();
+            // console.log(body);
+            // process.exit();
 
             // remove index 0 from array
             sliceAndContinueAddJob();

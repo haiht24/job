@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-job-board.js" afterPath="$PROJECT_DIR$/smart-job-board.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="506" column="22" lean-forward="true" selection-start-line="506" selection-start-column="22" selection-end-line="506" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="538" column="0" lean-forward="false" selection-start-line="538" selection-start-column="0" selection-end-line="538" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
                 <element signature="e#811#1106#0" expanded="false" />
@@ -45,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1065" column="26" lean-forward="true" selection-start-line="1065" selection-start-column="26" selection-end-line="1065" selection-end-column="26" />
+            <state relative-caret-position="126">
+              <caret line="1164" column="30" lean-forward="false" selection-start-line="1163" selection-start-column="11" selection-end-line="1164" selection-end-column="30" />
               <folding>
                 <element signature="e#752#31272#0" expanded="false" />
                 <element signature="e#762#2312#0" expanded="false" />
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js">
+      <file leaf-file-name="smart-job-board.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-349">
-              <caret line="499" column="41" lean-forward="false" selection-start-line="499" selection-start-column="41" selection-end-line="499" selection-end-column="41" />
+            <state relative-caret-position="245">
+              <caret line="1164" column="27" lean-forward="true" selection-start-line="1164" selection-start-column="27" selection-end-line="1164" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -120,8 +119,8 @@
       <find>schedulerBuildJSONJobs</find>
       <find>waitJob</find>
       <find>wordpress</find>
-      <find>updateInserted</find>
       <find>trackingJobsInserted</find>
+      <find>updateInserted</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -402,12 +401,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="12824000" />
+      <workItem from="1495762465836" duration="12946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185283000" />
+    <option name="totallyTimeSpent" value="185405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -865,10 +864,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="538" column="0" lean-forward="false" selection-start-line="538" selection-start-column="0" selection-end-line="538" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="e#811#1106#0" expanded="false" />
+            <element signature="e#966#1102#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#1380#4885#0" expanded="false" />
+            <element signature="e#4315#4649#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smart-job-board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1065" column="26" lean-forward="true" selection-start-line="1065" selection-start-column="26" selection-end-line="1065" selection-end-column="26" />
+        <state relative-caret-position="126">
+          <caret line="1164" column="30" lean-forward="false" selection-start-line="1163" selection-start-column="11" selection-end-line="1164" selection-end-column="30" />
           <folding>
             <element signature="e#752#31272#0" expanded="false" />
             <element signature="e#762#2312#0" expanded="false" />
@@ -892,22 +907,6 @@
             <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
             <element signature="n#!!block;n#updateInserted#0" expanded="false" />
             <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="506" column="22" lean-forward="true" selection-start-line="506" selection-start-column="22" selection-end-line="506" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-            <element signature="e#811#1106#0" expanded="false" />
-            <element signature="e#966#1102#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="e#1380#4885#0" expanded="false" />
-            <element signature="e#4315#4649#0" expanded="false" />
-            <element signature="n#!!block;n#nightmare#0" expanded="false" />
           </folding>
         </state>
       </provider>
