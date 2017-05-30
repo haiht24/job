@@ -28,7 +28,7 @@ var writeJSON = function (filePath, data, exitApp) {
     filePath = './' + filePath;
     fs.writeFile(filePath, json, null, function () {
         console.log('done write to file: %s', filePath);
-        if(typeof exitApp !== 'undefined')
+        if(typeof exitApp === true)
             process.exit(0);
     });
 };
@@ -42,7 +42,7 @@ function extractEmails (text){
 }
 
 // Get and insert employer list to mongodb
-var insertEmployersToMongoDb = function () {
+var insertEmployersToMongoDb = function (runNextStep) {
     // Get employer detail
     var epl;
     var arrEplDetails = [];
@@ -96,7 +96,6 @@ var insertEmployersToMongoDb = function () {
             var arrEpls = [];
             arrEpls.push(epl);
             Epl.insertMany(arrEpls);
-            // arrEplDetails.push(epl);
 
             done();
         }
@@ -104,7 +103,12 @@ var insertEmployersToMongoDb = function () {
     crlGetEplDetail.on('drain',function(){
         console.log(arrEplDetails.length);
         console.timeEnd('getEplDetailAndInsert');
-        process.exit(0);
+        if(runNextStep === true){
+            buildJSONJobList(true);
+        }else{
+            process.exit(0);
+        }
+
     });
 
     var link = 'https://www.healthecareers.com/healthcare-employers';
@@ -138,7 +142,7 @@ var insertEmployersToMongoDb = function () {
     });
 };
 
-var buildJSONJobList = function () {
+var buildJSONJobList = function (runNextStep) {
     var arrLinks = [];
     var crl = new Crawler({
         rateLimit: 0,
@@ -167,8 +171,20 @@ var buildJSONJobList = function () {
     });
     // Emitted when queue is empty
     crl.on('drain',function(){
-        writeJSON(fileLinksJobs, arrLinks, 'close app after done');
         console.timeEnd('buildUrlJobDetail');
+
+        var fs = require('node-fs');
+        var json = JSON.stringify(arrLinks);
+        var filePath = './' + fileLinksJobs;
+        fs.writeFile(filePath, json, null, function () {
+            console.log('done write to file: %s', filePath);
+            if(runNextStep === true){
+                getListJobs(true);
+            }else{
+                process.exit();
+            }
+        });
+
     });
     // Get all urlAllJobs
     Epl.find({urlAllJobs: {
@@ -188,7 +204,7 @@ var buildJSONJobList = function () {
     });
 };
 
-var getListJobs = function () {
+var getListJobs = function (runNextStep) {
     var jobUrls = require('./' + fileLinksJobs);
     jobUrls = jobUrls.toString().split(',');
 
@@ -216,12 +232,22 @@ var getListJobs = function () {
     // var temp = ['https://www.healthecareers.com/search-jobs/?empid=349519&specialty=*&ps=100&pg=1'];
     // crl.queue(temp);
     crl.on('drain',function(){
-        console.log(arr.length);
-        writeJSON(fileJobsList, arr, true);
+        console.log('length now %s', arr.length);
+        if(runNextStep === true){
+            var fs = require('node-fs');
+            var json = JSON.stringify(arr);
+            var filePath = './' + fileJobsList;
+            fs.writeFile(filePath, json, null, function () {
+                console.log('done write to file: %s', filePath);
+                getJobDetail(true);
+            });
+        }else{
+            process.exit();
+        }
     });
 };
 
-var getJobDetail = function () {
+var getJobDetail = function (runNextStep) {
     var jobsList = require('./' + fileJobsList);
     jobsList = jobsList.toString().split(',');
 
@@ -289,7 +315,13 @@ var getJobDetail = function () {
     crl.on('drain',function(){
         setTimeout(function(){
             console.timeEnd('pushJob');
-            process.exit(0);
+            if(runNextStep === true){
+                // step 5
+                JB.addEplToSmartJobsBoard(true);
+            }else{
+                process.exit(0);
+            }
+
         }, 3000);
     });
 };
@@ -312,40 +344,6 @@ var getJobDetail = function () {
 //         }).limit(1);
 //     }, wait*1000);
 // }
-
-var arrJobs = [];
-var waitJob = 0;
-var countCurrentEmployer = 1;
-function schedulerBuildJSONJobs() {
-    setTimeout(function () {
-        Epl.find({inserted: 1}, function (err, obj) {
-            if(err) throw err;
-            if(obj.length){
-                obj = obj[0];
-                if(obj.jobs.length > 0){
-                    arrJobs = arrJobs.concat(obj.jobs);
-                    console.log('No %s | employer %s | length now %s', countCurrentEmployer, obj.eplId, arrJobs.length);
-                }
-
-                // stop here to test
-                // if(countCurrentEmployer === 20){
-                //     writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
-                //     console.timeEnd('buildJSONJobsAddToWordpress');
-                // }
-                // end
-
-                countCurrentEmployer++;
-                updateInserted(obj.eplId, 0);
-                schedulerBuildJSONJobs();
-            }else{
-                console.log('array %s', arrJobs.length);
-                writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
-                console.timeEnd('buildJSONJobsAddToWordpress');
-            }
-
-        }).limit(1);
-    }, waitJob*1000);
-}
 
 var jobsJSON = require('./json-files/' + 'array-jobs-will-add-to-wordpress.json');
 function addJobsToWordpress() {
@@ -501,7 +499,7 @@ var JB = require('./smart-job-board.js');
 //1 : khoang 43s
 
 // console.time('getListEpl');
-// insertEmployersToMongoDb();
+// insertEmployersToMongoDb(true);
 
 //2 : khoang 80s
 // buildJSONJobList();
@@ -520,7 +518,33 @@ var JB = require('./smart-job-board.js');
 // schedulerBuildJSONJobs();
 
 // 7 add jobs to SmartJobBoard
-JB.addJobsToJobBoard();
+// JB.addJobsToJobBoard();
+
+// Get new job and compare with db in SJB
+// JB.buildJSON_existedJobs_inSJB();
+// JB.buildJSON_existedEmployers_inSJB();
+
+function renameDb() {
+    var MongoClient = require('mongodb').MongoClient
+        , assert = require('assert');
+    var url = "mongodb://127.0.0.1:27017/jobs";
+    MongoClient.connect(url, function(err, db) {
+        assert.equal(null, err);
+        console.log("Connected correctly to server");
+        var now = new Date().toLocaleString();
+        db.collection('employers').rename('employers_bk_'+now);
+        db.close();
+
+        console.time('getListEpl');
+        insertEmployersToMongoDb(true);
+
+    });
+}
+// start here
+// renameDb();
+
+// chay tu buoc 5, check exist epl va add
+JB.addEplToSmartJobsBoard();
 
 // #############################End step########################
 

@@ -930,7 +930,15 @@ function schedulerAddUsers() {
                 console.timeEnd('addEpmployerToSmartJob');
                 console.log('Finish add users');
                 console.log(arrInsertedEpl);
-                writeJSON('./json-files/arrayEplInserted.json', arrInsertedEpl, true);
+                // writeJSON('./json-files/arrayEplInserted.json', arrInsertedEpl, true);
+                var fs = require('node-fs');
+                var json = JSON.stringify(arrInsertedEpl);
+                var filePath = './' + 'json-files/arrayEplInserted.json';
+                fs.writeFile(filePath, json, null, function () {
+                    console.log('done write to file: %s', filePath);
+                    console.time('buildJSONJobsAddToWordpress');
+                    schedulerBuildJSONJobs();
+                });
             }
         }).limit(1);
     }, wait*1000);
@@ -944,7 +952,19 @@ function updateInserted(eplId, inserted, printMessage) {
     });
 }
 
+var existedEpl = require('./json-files/existed-employers-in-SJB.json');
 function addEmployer(obj) {
+
+    for(var i = 0; i < existedEpl.length; i++){
+        var e = existedEpl[i];
+        if(obj.eplId.toString() === e.sourceEplId.toString()){
+            console.log('Employer name %s exited', obj.name);
+            updateInserted(obj.eplId, 1);
+            schedulerAddUsers();
+            return;
+        }
+    }
+
     var url = originPath + 'employers?api_key=' + apiKey;
     var email = randomEmail(),
         cpnName = obj.name,
@@ -1021,6 +1041,7 @@ function addEmployer(obj) {
             }
         ]
     };
+
     request.post({
         method: 'POST',
         url: url,
@@ -1060,12 +1081,14 @@ var fileArrayEplInserted = require('./json-files/' + 'arrayEplInserted.json');
 
 var filePathTrackingJobsInserted = './json-files/trackingJobsInserted.json';
 var trackingJobsInserted = require(filePathTrackingJobsInserted);
+var existedJobsInSJB = require('./json-files/existed-jobs-in-SJB.json');
 function addJobs() {
     // exit when finish
     if(typeof jobsJSON[0] === 'undefined'){
         console.log('Import jobs done. Exit');
         console.timeEnd('addJobToSmartJob');
         writeJSON(filePathTrackingJobsInserted, trackingJobsInserted, true);
+        return;
     }
     var job = jobsJSON[0];
     console.log('tracking ', trackingJobsInserted.length);
@@ -1074,6 +1097,16 @@ function addJobs() {
             var temp = trackingJobsInserted[i];
             if(job.jobId === temp.sourceJobId){
                 console.log('This job already inserted. Skip');
+                sliceAndContinueAddJob();
+                return;
+            }
+        }
+    }
+    if(existedJobsInSJB.length > 0){
+        for(var i = 0; i < existedJobsInSJB.length; i++){
+            var _j = existedJobsInSJB[i];
+            if(_j.sourceJobId.toString() === job.jobId.toString()){
+                console.log('This job already inserted in SJB. Skip');
                 sliceAndContinueAddJob();
                 return;
             }
@@ -1182,6 +1215,144 @@ function sliceAndContinueAddJob() {
     addJobs();
 }
 
+// Tao file json cac jobs da ton tai trong smart job board
+var page = 1;
+var arrJobs = [];
+function buildJSON_existedJobs_inSJB() {
+    // var url = 'https://jobboardurl.com/api/jobs?page=&limit=&q=&l=&c=';
+    var limit = 100, query = '', location = '', category = '';
+    var url = originPath + 'jobs?limit=' + limit + '&page=' + page + '&api_key=' + apiKey;
+    console.log('page %s | arrJobs.length: %s | limit %s | url: %s', page, arrJobs.length, limit, url);
+    request(url, function (error, response, body) {
+        if(response.statusCode !== 200){
+            console.log('Error code %s', response.statusCode);
+            console.log(body);
+            process.exit();
+        }
+        body = JSON.parse(body);
+        var jobs = body.jobs;
+        if(jobs.length === 0){
+            writeExistedJobsToJSON('./json-files/existed-jobs-in-SJB.json', arrJobs, true);
+            return;
+        }
+        for(var i=0;i<jobs.length;i++){
+            var j = jobs[i];
+            var customFields = j.custom_fields;
+            var e = {sourceJobId: '', sourceEplId: ''};
+            for(var k=0;k<customFields.length;k++){
+                var ctf = customFields[k];
+                if(ctf.name === 'Source Job Id')
+                    e.sourceJobId = ctf.value;
+                else if(ctf.name === 'Source Employer Id')
+                    e.sourceEplId = ctf.value;
+            }
+            arrJobs.push(e);
+        }
+        page++;
+        buildJSON_existedJobs_inSJB();
+        console.log(arrJobs.length);
+        console.timeEnd('get100Jobs');
+    });
+}
+
+// Tao file json cac epl da ton tai trong smart job board
+var pageEpl = 1;
+var arrEpl = [];
+function buildJSON_existedEmployers_inSJB() {
+    var limit = 100;
+    var url = originPath + 'employers?limit=' + limit + '&page=' + pageEpl + '&api_key=' + apiKey;
+    console.log('page %s | arrEpl.length: %s | limit %s | url: %s', pageEpl, arrEpl.length, limit, url);
+    request(url, function (error, response, body) {
+        if(response.statusCode !== 200){
+            console.log('Error code %s', response.statusCode);
+            console.log(body);
+            process.exit();
+        }
+        body = JSON.parse(body);
+        var employers = body.employers;
+        if(employers.length === 0){
+            var fs = require('node-fs');
+            var json = JSON.stringify(arrEpl);
+            filePath = './json-files/' + 'existed-employers-in-SJB.json';
+            fs.writeFile(filePath, json, null, function () {
+                console.log('done write to file: %s', filePath);
+                process.exit();
+            });
+            return;
+        }
+        for(var i=0;i<employers.length;i++){
+            var j = employers[i];
+            var customFields = j.custom_fields;
+            var e = {sourceEplId: '', url: ''};
+            for(var k=0;k<customFields.length;k++){
+                var ctf = customFields[k];
+                if(ctf.name === 'Source Employer Id')
+                    e.sourceEplId = ctf.value;
+                else if(ctf.name === 'Source Url')
+                    e.url = ctf.value;
+            }
+            arrEpl.push(e);
+        }
+        pageEpl++;
+        buildJSON_existedEmployers_inSJB();
+        console.log(arrEpl.length);
+        console.timeEnd('get100Epl');
+    });
+}
+
+function writeExistedJobsToJSON(filePath, data, exitApp) {
+    var fs = require('node-fs');
+    var json = JSON.stringify(data);
+    filePath = './' + filePath;
+    fs.writeFile(filePath, json, null, function () {
+        console.log('done write to file: %s', filePath);
+        if(exitApp === true)
+            process.exit();
+    });
+}
+
+var arrJobs = [];
+var waitJob = 0;
+var countCurrentEmployer = 1;
+function schedulerBuildJSONJobs() {
+    setTimeout(function () {
+        Epl.find({inserted: 1}, function (err, obj) {
+            if(err) throw err;
+            if(obj.length){
+                obj = obj[0];
+                if(obj.jobs.length > 0){
+                    arrJobs = arrJobs.concat(obj.jobs);
+                    console.log('No %s | employer %s | length now %s', countCurrentEmployer, obj.eplId, arrJobs.length);
+                }
+
+                // stop here to test
+                // if(countCurrentEmployer === 20){
+                //     writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
+                //     console.timeEnd('buildJSONJobsAddToWordpress');
+                // }
+                // end
+
+                countCurrentEmployer++;
+                updateInserted(obj.eplId, 0);
+                schedulerBuildJSONJobs();
+            }else{
+                console.log('array %s', arrJobs.length);
+                // writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
+                var fs = require('node-fs');
+                var json = JSON.stringify(arrJobs);
+                var filePath = './' + 'json-files/array-jobs-will-add-to-wordpress.json';
+                fs.writeFile(filePath, json, null, function () {
+                    console.log('done write to file: %s', filePath);
+                    console.time('addJobToSmartJob');
+                    addJobs();
+                });
+                console.timeEnd('buildJSONJobsAddToWordpress');
+            }
+
+        }).limit(1);
+    }, waitJob*1000);
+}
+
 module.exports = {
     addEplToSmartJobsBoard: function () {
         console.time('addEpmployerToSmartJob');
@@ -1193,6 +1364,22 @@ module.exports = {
             addJobs();
         }catch (ex){
             writeJSON(filePathTrackingJobsInserted, trackingJobsInserted, true);
+        }
+    },
+    buildJSON_existedJobs_inSJB: function () {
+        try{
+            console.time('get100Jobs');
+            buildJSON_existedJobs_inSJB();
+        }catch (ex){
+            throw new ex;
+        }
+    },
+    buildJSON_existedEmployers_inSJB: function () {
+        try{
+            console.time('get100Epl');
+            buildJSON_existedEmployers_inSJB();
+        }catch (ex){
+            throw new ex;
         }
     }
 };

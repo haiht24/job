@@ -5,12 +5,14 @@
   "author": "HaiHT",
   "license": "ISC",
   "dependencies": {
+    "assert": "^1.4.1",
     "aws-sdk": "^2.54.0",
     "cheerio": "^0.19.0",
     "crawler": "^1.0.4",
+    "mongodb": "^2.2.27",
     "mongoose": "^4.9.4",
+    "nightmare": "^2.10.0",
     "node-fs": "^0.1.7",
-    "request": "^2.65.0",
-    "nightmare": "^2.10.0"
+    "request": "^2.65.0"
   }
 }
