@@ -1337,7 +1337,6 @@ function schedulerBuildJSONJobs() {
                 schedulerBuildJSONJobs();
             }else{
                 console.log('array %s', arrJobs.length);
-                // writeJSON('./json-files/array-jobs-will-add-to-wordpress.json', arrJobs, true);
                 var fs = require('node-fs');
                 var json = JSON.stringify(arrJobs);
                 var filePath = './' + 'json-files/array-jobs-will-add-to-wordpress.json';

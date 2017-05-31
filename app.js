@@ -518,7 +518,7 @@ var JB = require('./smart-job-board.js');
 // schedulerBuildJSONJobs();
 
 // 7 add jobs to SmartJobBoard
-// JB.addJobsToJobBoard();
+JB.addJobsToJobBoard();
 
 // Get new job and compare with db in SJB
 // JB.buildJSON_existedJobs_inSJB();
@@ -544,7 +544,7 @@ function renameDb() {
 // renameDb();
 
 // chay tu buoc 5, check exist epl va add
-JB.addEplToSmartJobsBoard();
+// JB.addEplToSmartJobsBoard();
 
 // #############################End step########################
 
