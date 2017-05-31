@@ -921,7 +921,7 @@ function schedulerAddUsers() {
     setTimeout(function () {
         Epl.find({inserted: 0}, function (err, obj) {
             if(err) throw err;
-            if(obj.length){
+            if(obj.length > 0){
                 obj = obj[0];
                 console.log('Inserting employer %s', obj.eplId);
                 addEmployer(obj);
@@ -1141,7 +1141,7 @@ function addJobs() {
     var title = job.title ? job.title : 'default job title';
 
     var url = originPath + 'jobs?api_key=' + apiKey;
-    var body = {
+    var data = {
         "active": 1,
         "featured": 0,
         "activation_date": job.date,
@@ -1179,7 +1179,7 @@ function addJobs() {
         method: 'POST',
         url: url,
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(body)
+        body: JSON.stringify(data)
     }, function (err, res, body) {
         if(typeof res.statusCode === 'undefined'){
             console.log('###########################Error############################');
