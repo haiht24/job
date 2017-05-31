@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-job-board.js" afterPath="$PROJECT_DIR$/smart-job-board.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" afterPath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart-job-board.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
@@ -72,6 +72,26 @@
                 <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
                 <element signature="n#!!block;n#updateInserted#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array-jobs-will-add-to-wordpress.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +127,6 @@
       <find>addEmployer</find>
       <find>pushJob</find>
       <find>schedulerAddUsers</find>
-      <find>addJobsToJobBoard</find>
       <find>sliceAndContinueAddJob</find>
       <find>step 5</find>
       <find>addEplToSmartJobsBoard</find>
@@ -119,6 +138,7 @@
       <find>Import jobs done. Exit</find>
       <find>buildJSONJobsAddToWordpress</find>
       <find>addJobs</find>
+      <find>addJobsToJobBoard</find>
       <find>addJobs()</find>
     </findStrings>
     <replaceStrings>
@@ -161,7 +181,6 @@
         <option value="$PROJECT_DIR$/jobs-list.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.js" />
         <option value="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/models/Employer.js" />
         <option value="$PROJECT_DIR$/link-jobs-will-crawl-data.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html" />
@@ -184,6 +203,8 @@
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/array-jobs-will-add-to-wordpress.json" />
         <option value="$PROJECT_DIR$/smart-job-board.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -407,12 +428,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="35007000" />
+      <workItem from="1495762465836" duration="35287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207466000" />
+    <option name="totallyTimeSpent" value="207746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,9 +446,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="742" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17447495" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447495" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,7 +457,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2769231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2769231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -717,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -820,19 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="158">
-          <caret line="0" column="660" lean-forward="true" selection-start-line="0" selection-start-column="660" selection-end-line="0" selection-end-column="660" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/existed-jobs-in-SJB.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1044">
@@ -881,6 +883,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="520" column="23" lean-forward="true" selection-start-line="520" selection-start-column="23" selection-end-line="520" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#3233#3537#0" expanded="false" />
+            <element signature="e#4379#4713#0" expanded="false" />
+            <element signature="e#9797#10171#0" expanded="false" />
+            <element signature="n#!!block;n#nightmare#0" expanded="false" />
+            <element signature="n#!!block;n#renameDb#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smart-job-board.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -909,19 +927,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="158">
+          <caret line="0" column="660" lean-forward="true" selection-start-line="0" selection-start-column="660" selection-end-line="0" selection-end-column="660" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="520" column="23" lean-forward="true" selection-start-line="520" selection-start-column="23" selection-end-line="520" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="e#3233#3537#0" expanded="false" />
-            <element signature="e#4379#4713#0" expanded="false" />
-            <element signature="e#9797#10171#0" expanded="false" />
-            <element signature="n#!!block;n#nightmare#0" expanded="false" />
-            <element signature="n#!!block;n#renameDb#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
