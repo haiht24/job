@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" afterPath="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,17 +74,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array-jobs-will-add-to-wordpress.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="array-jobs-will-add-to-wordpress.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -202,8 +201,9 @@
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/array-jobs-will-add-to-wordpress.json" />
         <option value="$PROJECT_DIR$/smart-job-board.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/.git/config" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -427,12 +427,12 @@
       <workItem from="1495073497120" duration="391000" />
       <workItem from="1495102657822" duration="464000" />
       <workItem from="1495342513279" duration="54732000" />
-      <workItem from="1495762465836" duration="35602000" />
+      <workItem from="1495762465836" duration="36215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208061000" />
+    <option name="totallyTimeSpent" value="208674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
       <provider editor-type-id="LargeFileEditor">
         <state relative-caret-position="158">
@@ -943,6 +935,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
