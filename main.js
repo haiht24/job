@@ -1460,6 +1460,7 @@ function buildJSON_existedJobs_inSJB() {
                 filePath = defaultDir + 'existed-jobs-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
+                    console.time('get100Epl');
                     buildJSON_existedEmployers_inSJB();
                 });
                 return;
