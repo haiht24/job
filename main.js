@@ -8,9 +8,38 @@ var Epl = require('./models/Employer');
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect(strConnection);
+// Function create file if not exist
+var defaultDir = './json-files/';
+function createNeededFiles() {
+    var files = [
+        'link-employers-will-get-jobs.json',
+        'link-jobs-will-crawl.json',
+        'arrayEplInserted.json',
+        'existed-employers-in-SJB.json',
+        'array-jobs-will-add-to-SmartJobBoard.json',
+        'existed-jobs-in-SJB.json',
+        'trackingJobsInserted.json'
+    ];
+    var fs = require('node-fs');
+    for(var i = 0; i < files.length; i++){
+        var f = files[i];
+        f = defaultDir + f;
+        fs.stat(f, function(err, stat) {
+            if(err === null) {
+                console.log('File exists');
+            } else if(err.code === 'ENOENT') {
+                // file does not exist
+                fs.writeFile(f, '[]');
+            } else {
+                console.log('Some other error: ', err.code);
+            }
+        });
+    }
+}
+
 // JSON files path
-var fileLinksEmployers = './json-files/link-employers-will-get-jobs.json';
-var fileJobsList = './json-files/link-jobs-will-crawl.json';
+var fileLinksEmployers = defaultDir + 'link-employers-will-get-jobs.json';
+var fileJobsList = defaultDir + 'link-jobs-will-crawl.json';
 // Smart job board API key
 var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
 var originPath = 'https://health.mysmartjobboard.com/api/';
@@ -19,6 +48,7 @@ var arrInsertedEpl = [];
 var countInsertedJob = 0;
 
 // Functions linh tinh ********************************************************
+
 function randomEmail() {
     var text = "";
     var alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,v,w,x,y,z".split(",");
@@ -1237,7 +1267,7 @@ function schedulerAddUsers() {
                 // write to json file
                 var fs = require('node-fs');
                 var json = JSON.stringify(arrInsertedEpl);
-                var filePath = './' + 'json-files/arrayEplInserted.json';
+                var filePath = defaultDir + 'arrayEplInserted.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
 
@@ -1250,9 +1280,9 @@ function schedulerAddUsers() {
 }
 
 try {
-    var existedEpl = require('./json-files/existed-employers-in-SJB.json');
+    var existedEpl = require(defaultDir + 'existed-employers-in-SJB.json');
 } catch (ex) {
-    console.log('File not exist: %s', './json-files/existed-employers-in-SJB.json');
+    console.log('File not exist: %s', defaultDir + 'existed-employers-in-SJB.json');
 }
 
 function addEmployer(obj) {
@@ -1408,7 +1438,7 @@ function schedulerBuildJSONJobs() {
                     console.log('array %s', arrJobs.length);
                     var fs = require('node-fs');
                     var json = JSON.stringify(arrJobs);
-                    var filePath = './' + 'json-files/array-jobs-will-add-to-SmartJobBoard.json';
+                    var filePath = defaultDir + 'array-jobs-will-add-to-SmartJobBoard.json';
                     fs.writeFile(filePath, json, null, function () {
                         console.log('done write to file: %s', filePath);
 
@@ -1444,7 +1474,7 @@ function buildJSON_existedJobs_inSJB() {
             if (jobs.length === 0) {
                 var fs = require('node-fs');
                 var json = JSON.stringify(arrExistedJobs);
-                filePath = './' + 'json-files/existed-jobs-in-SJB.json';
+                filePath = defaultDir + 'existed-jobs-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
                     buildJSON_existedEmployers_inSJB();
@@ -1493,7 +1523,7 @@ function buildJSON_existedEmployers_inSJB() {
             if (employers.length === 0) {
                 var fs = require('node-fs');
                 var json = JSON.stringify(arrEpl);
-                filePath = './json-files/' + 'existed-employers-in-SJB.json';
+                filePath = defaultDir + 'existed-employers-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
                     start();
@@ -1533,13 +1563,13 @@ function updateInserted(eplId, inserted, printMessage) {
 
 // Insert job to Smart job board
 try {
-    var jobsJSON = require('./json-files/' + 'array-jobs-will-add-to-SmartJobBoard.json');
-    var fileArrayEplInserted = require('./json-files/' + 'arrayEplInserted.json');
-    var existedEplInSJB = require('./json-files/' + 'existed-employers-in-SJB.json');
+    var jobsJSON = require(defaultDir + 'array-jobs-will-add-to-SmartJobBoard.json');
+    var fileArrayEplInserted = require(defaultDir + 'arrayEplInserted.json');
+    var existedEplInSJB = require(defaultDir + 'existed-employers-in-SJB.json');
 
-    var filePathTrackingJobsInserted = './json-files/trackingJobsInserted.json';
+    var filePathTrackingJobsInserted = defaultDir + 'trackingJobsInserted.json';
     var trackingJobsInserted = require(filePathTrackingJobsInserted);
-    var existedJobsInSJB = require('./json-files/existed-jobs-in-SJB.json');
+    var existedJobsInSJB = require(defaultDir + 'existed-jobs-in-SJB.json');
 } catch (ex) {
     console.log('File not exist');
     throw ex;
@@ -1757,15 +1787,16 @@ function sliceAndContinueAddJob() {
 // console.time('get100Epl');
 // buildJSON_existedEmployers_inSJB();
 
-try{
-    console.time('addJobToSmartJob');
-    addJobsToSJB();
-}catch (ex){
-    console.log('Error when sending this data');
-    console.log(sendingData_trackToDebug);
-    writeJSON(filePathTrackingJobsInserted, trackingJobsInserted, true);
-    throw ex;
-}
-
+// try{
+//     console.time('addJobToSmartJob');
+//     addJobsToSJB();
+// }catch (ex){
+//     console.log('Error when sending this data');
+//     console.log(sendingData_trackToDebug);
+//     writeJSON(filePathTrackingJobsInserted, trackingJobsInserted, true);
+//     throw ex;
+// }
 
 // testAddJob();
+
+createNeededFiles();
