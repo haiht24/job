@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prepare.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,22 +167,12 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="266">
+              <caret line="1798" column="0" lean-forward="false" selection-start-line="1798" selection-start-column="0" selection-end-line="1798" selection-end-column="0" />
               <folding>
-                <element signature="e#2112#32657#0" expanded="false" />
-                <marker date="1496373687000" expanded="true" signature="63654:63658" ph="&gt;" />
+                <element signature="e#2936#33481#0" expanded="false" />
+                <marker date="1496374049000" expanded="true" signature="64478:64482" ph="&gt;" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prepare.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prepare.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -192,7 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>start</find>
       <find>schedulerAddUsers</find>
       <find>getEplDetailAndInsert</find>
       <find>crlGetEplDetail</find>
@@ -220,8 +208,9 @@
       <find>existed-employers-in-SJB.json</find>
       <find>trackingJobsInserted.json</find>
       <find>existed-jobs-in-SJB.json</find>
-      <find>.json</find>
       <find>json-files</find>
+      <find>.json</find>
+      <find>createNeededFiles</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -513,12 +502,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="26873000" />
+      <workItem from="1496279902974" duration="27082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245550000" />
+    <option name="totallyTimeSpent" value="245759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,55 +554,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1248</line>
+          <line>1274</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1419</line>
+          <line>1445</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1620</line>
+          <line>1646</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1705</line>
+          <line>1731</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>828</line>
+          <line>854</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1629</line>
+          <line>1655</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1764</line>
+          <line>1790</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1572</line>
+          <line>1598</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1453</line>
+          <line>1479</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -1587,19 +1576,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prepare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="123">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="266">
+          <caret line="1798" column="0" lean-forward="false" selection-start-line="1798" selection-start-column="0" selection-end-line="1798" selection-end-column="0" />
           <folding>
-            <element signature="e#2112#32657#0" expanded="false" />
-            <marker date="1496373687000" expanded="true" signature="63654:63658" ph="&gt;" />
+            <element signature="e#2936#33481#0" expanded="false" />
+            <marker date="1496374049000" expanded="true" signature="64478:64482" ph="&gt;" />
           </folding>
         </state>
       </provider>

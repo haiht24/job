@@ -10,6 +10,15 @@ mongoose.Promise = global.Promise;
 mongoose.connect(strConnection);
 // Function create file if not exist
 var defaultDir = './json-files/';
+var files = [
+    'link-employers-will-get-jobs.json',
+    'link-jobs-will-crawl.json',
+    'arrayEplInserted.json',
+    'existed-employers-in-SJB.json',
+    'array-jobs-will-add-to-SmartJobBoard.json',
+    'existed-jobs-in-SJB.json',
+    'trackingJobsInserted.json'
+];
 
 // JSON files path
 var fileLinksEmployers = defaultDir + 'link-employers-will-get-jobs.json';
@@ -1771,5 +1780,3 @@ function sliceAndContinueAddJob() {
 // }
 
 // testAddJob();
-
-createNeededFiles();
