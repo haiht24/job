@@ -167,12 +167,24 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="950" column="35" lean-forward="true" selection-start-line="950" selection-start-column="35" selection-end-line="950" selection-end-column="35" />
+            <state relative-caret-position="74">
+              <caret line="1783" column="30" lean-forward="true" selection-start-line="1783" selection-start-column="30" selection-end-line="1783" selection-end-column="30" />
               <folding>
                 <element signature="e#2382#32927#0" expanded="false" />
-                <marker date="1496386634000" expanded="true" signature="63401:63405" ph="&gt;" />
+                <element signature="e#48610#49680#0" expanded="false" />
+                <element signature="e#53402#53551#0" expanded="false" />
+                <marker date="1496395903000" expanded="true" signature="63807:63811" ph="&gt;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="existed-jobs-in-SJB.json" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/existed-jobs-in-SJB.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,9 +192,11 @@
       <file leaf-file-name="main.js" pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="876" column="14" lean-forward="true" selection-start-line="876" selection-start-column="14" selection-end-line="876" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="117">
+              <caret line="1414" column="34" lean-forward="false" selection-start-line="1414" selection-start-column="34" selection-end-line="1414" selection-end-column="34" />
+              <folding>
+                <element signature="e#41638#42206#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,15 +205,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addEpmployerToSmartJob</find>
-      <find>schedulerBuildJSONJobs</find>
-      <find>buildJSONJobsAddToSJB</find>
-      <find>addJobsToSJB</find>
-      <find>buildJSONLinkEmployers</find>
-      <find>addEmployer</find>
-      <find>arrInsertedEpl</find>
-      <find>arrayEplInserted.json</find>
-      <find>fileArrayEplInserted</find>
       <find>how_to_apply</find>
       <find>.replace</find>
       <find>replace</find>
@@ -208,19 +213,28 @@
       <find>.</find>
       <find>arrayEplInserted</find>
       <find>existed-employers-in-SJB.json</find>
-      <find>trackingJobsInserted.json</find>
       <find>existed-jobs-in-SJB.json</find>
       <find>json-files</find>
       <find>createNeededFiles</find>
       <find>files</find>
       <find>start()</find>
-      <find>buildJSON_existedJobs_inSJB</find>
       <find>get100Jobs</find>
       <find>buildJSON_existedEmployers_inSJB</find>
       <find>insertEmployersToMongoDb</find>
-      <find>.json</find>
       <find>get100Epl</find>
       <find>extractEmails</find>
+      <find>getListJobs</find>
+      <find>changed</find>
+      <find>arrLinks</find>
+      <find>existed</find>
+      <find>trackingJobsInserted.json</find>
+      <find>trackingJobsInserted</find>
+      <find>.json</find>
+      <find>addEmployer</find>
+      <find>addJobsToSJB();</find>
+      <find>addJobsToSJB</find>
+      <find>filePath = defaultDir</find>
+      <find>buildJSON_existedJobs_inSJB</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -301,6 +315,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.js" />
         <option value="$PROJECT_DIR$/prepare.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/existed-jobs-in-SJB.json" />
         <option value="$PROJECT_DIR$/main.js" />
       </list>
     </option>
@@ -513,12 +528,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="30190000" />
+      <workItem from="1496279902974" duration="34855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248867000" />
+    <option name="totallyTimeSpent" value="253532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,7 +557,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23846154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21846154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -571,19 +586,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1418</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1621</line>
+          <line>1627</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1706</line>
+          <line>1712</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -595,25 +604,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1630</line>
+          <line>1636</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1765</line>
+          <line>1771</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1573</line>
+          <line>1579</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1453</line>
+          <line>1459</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -1595,11 +1604,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="950" column="35" lean-forward="true" selection-start-line="950" selection-start-column="35" selection-end-line="950" selection-end-column="35" />
+        <state relative-caret-position="74">
+          <caret line="1783" column="30" lean-forward="true" selection-start-line="1783" selection-start-column="30" selection-end-line="1783" selection-end-column="30" />
           <folding>
             <element signature="e#2382#32927#0" expanded="false" />
-            <marker date="1496386634000" expanded="true" signature="63401:63405" ph="&gt;" />
+            <element signature="e#48610#49680#0" expanded="false" />
+            <element signature="e#53402#53551#0" expanded="false" />
+            <marker date="1496395903000" expanded="true" signature="63807:63811" ph="&gt;" />
           </folding>
         </state>
       </provider>

@@ -1412,11 +1412,15 @@ function schedulerBuildJSONJobs() {
                     var fs = require('node-fs');
                     var json = JSON.stringify(arrJobs);
                     var filePath = defaultDir + 'array-jobs-will-add-to-SmartJobBoard.json';
-                    fs.writeFile(filePath, json, null, function () {
-                        console.log('done write to file: %s', filePath);
-
-                        console.time('addJobToSmartJob');
-                        addJobsToSJB();
+                    fs.writeFile(filePath, json, null, function (err) {
+                        if (error) {
+                            console.error("write error:  " + error.message);
+                        } else {
+                            console.log('done write to file: %s', filePath);
+                            // Dang bi stop o day, co ve nhu array-jobs-will-add-to-SmartJobBoard.json chua kip co du lieu dc ghi vao
+                            console.time('addJobToSmartJob');
+                            addJobsToSJB();
+                        }
                     });
                     console.timeEnd('buildJSONJobsAddToSJB');
                 }
@@ -1442,14 +1446,16 @@ function buildJSON_existedJobs_inSJB() {
                 console.log(body);
                 process.exit();
             }
+
             body = JSON.parse(body);
             var jobs = body.jobs;
             if (jobs.length === 0) {
                 var fs = require('node-fs');
                 var json = JSON.stringify(arrExistedJobs);
-                filePath = defaultDir + 'existed-jobs-in-SJB.json';
+                var filePath = defaultDir + 'existed-jobs-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
+                    console.log('quit app now');process.exit();
                     console.time('get100Epl');
                     buildJSON_existedEmployers_inSJB();
                 });
@@ -1458,7 +1464,7 @@ function buildJSON_existedJobs_inSJB() {
             for (var i = 0; i < jobs.length; i++) {
                 var j = jobs[i];
                 var customFields = j.custom_fields;
-                var e = {sourceJobId: '', sourceEplId: ''};
+                var e = {sourceJobId: '', sourceEplId: '', ejbJobId: j.id};
                 for (var k = 0; k < customFields.length; k++) {
                     var ctf = customFields[k];
                     if (ctf.name === 'Source Job Id')
@@ -1774,13 +1780,15 @@ function sliceAndContinueAddJob() {
 // testAddJob();
 
 // first of all step
-// console.time('get100Jobs');
-// buildJSON_existedJobs_inSJB();
+console.time('get100Jobs');
+buildJSON_existedJobs_inSJB();
 
 // skip to step 2
 // console.time('get100Epl');
 // buildJSON_existedEmployers_inSJB();
 
 //skip to step 3
-console.time('getListEpl');
-insertEmployersToMongoDb(true);
+// console.time('getListEpl');
+// insertEmployersToMongoDb(true);
+
+// node --stack-size=64000 main.js
