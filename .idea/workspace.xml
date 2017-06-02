@@ -167,11 +167,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="1798" column="0" lean-forward="false" selection-start-line="1798" selection-start-column="0" selection-end-line="1798" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="1783" column="20" lean-forward="false" selection-start-line="1783" selection-start-column="20" selection-end-line="1783" selection-end-column="20" />
               <folding>
-                <element signature="e#2936#33481#0" expanded="false" />
-                <marker date="1496374049000" expanded="true" signature="64478:64482" ph="&gt;" />
+                <element signature="e#2382#32927#0" expanded="false" />
+                <marker date="1496374632000" expanded="true" signature="63924:63928" ph="&gt;" />
               </folding>
             </state>
           </provider>
@@ -181,8 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>schedulerAddUsers</find>
-      <find>getEplDetailAndInsert</find>
       <find>crlGetEplDetail</find>
       <find>Get employer detail</find>
       <find>buildJSONJobList</find>
@@ -200,8 +198,6 @@
       <find>.replace</find>
       <find>replace</find>
       <find>This job already inserted</find>
-      <find>start()</find>
-      <find>buildJSON_existedEmployers_inSJB</find>
       <find>emailsContact.filter</find>
       <find>.</find>
       <find>arrayEplInserted</find>
@@ -209,8 +205,12 @@
       <find>trackingJobsInserted.json</find>
       <find>existed-jobs-in-SJB.json</find>
       <find>json-files</find>
-      <find>.json</find>
       <find>createNeededFiles</find>
+      <find>.json</find>
+      <find>files</find>
+      <find>start()</find>
+      <find>buildJSON_existedEmployers_inSJB</find>
+      <find>buildJSON_existedJobs_inSJB</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -502,12 +502,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="27082000" />
+      <workItem from="1496279902974" duration="27600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245759000" />
+    <option name="totallyTimeSpent" value="246277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -522,7 +522,7 @@
     <frame x="0" y="23" width="1280" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17851374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21324718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15266559" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -554,55 +554,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1274</line>
+          <line>1257</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1445</line>
+          <line>1428</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1646</line>
+          <line>1629</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1731</line>
+          <line>1714</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>854</line>
+          <line>837</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1655</line>
+          <line>1638</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1790</line>
+          <line>1773</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1598</line>
+          <line>1581</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1479</line>
+          <line>1462</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -1584,11 +1584,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="1798" column="0" lean-forward="false" selection-start-line="1798" selection-start-column="0" selection-end-line="1798" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="1783" column="20" lean-forward="false" selection-start-line="1783" selection-start-column="20" selection-end-line="1783" selection-end-column="20" />
           <folding>
-            <element signature="e#2936#33481#0" expanded="false" />
-            <marker date="1496374049000" expanded="true" signature="64478:64482" ph="&gt;" />
+            <element signature="e#2382#32927#0" expanded="false" />
+            <marker date="1496374632000" expanded="true" signature="63924:63928" ph="&gt;" />
           </folding>
         </state>
       </provider>

@@ -1780,3 +1780,6 @@ function sliceAndContinueAddJob() {
 // }
 
 // testAddJob();
+
+// first of all step
+buildJSON_existedJobs_inSJB();
