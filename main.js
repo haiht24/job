@@ -1483,6 +1483,7 @@ function buildJSON_existedJobs_inSJB() {
             console.timeEnd('get100Jobs');
         });
     }
+    build();
 }
 
 // Tao file json cac epl da ton tai trong smart job board

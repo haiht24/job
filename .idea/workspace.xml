@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prepare.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,11 +168,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="1783" column="20" lean-forward="false" selection-start-line="1783" selection-start-column="20" selection-end-line="1783" selection-end-column="20" />
+            <state relative-caret-position="237">
+              <caret line="1485" column="12" lean-forward="false" selection-start-line="1485" selection-start-column="12" selection-end-line="1485" selection-end-column="12" />
               <folding>
                 <element signature="e#2382#32927#0" expanded="false" />
-                <marker date="1496374632000" expanded="true" signature="63924:63928" ph="&gt;" />
+                <marker date="1496374726000" expanded="true" signature="63937:63941" ph="&gt;" />
               </folding>
             </state>
           </provider>
@@ -502,12 +503,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="27600000" />
+      <workItem from="1496279902974" duration="27694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246277000" />
+    <option name="totallyTimeSpent" value="246371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,13 +567,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1629</line>
+          <line>1630</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1714</line>
+          <line>1715</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -584,19 +585,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1638</line>
+          <line>1639</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1773</line>
+          <line>1774</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1581</line>
+          <line>1582</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -1584,11 +1585,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="1783" column="20" lean-forward="false" selection-start-line="1783" selection-start-column="20" selection-end-line="1783" selection-end-column="20" />
+        <state relative-caret-position="237">
+          <caret line="1485" column="12" lean-forward="false" selection-start-line="1485" selection-start-column="12" selection-end-line="1485" selection-end-column="12" />
           <folding>
             <element signature="e#2382#32927#0" expanded="false" />
-            <marker date="1496374632000" expanded="true" signature="63924:63928" ph="&gt;" />
+            <marker date="1496374726000" expanded="true" signature="63937:63941" ph="&gt;" />
           </folding>
         </state>
       </provider>
