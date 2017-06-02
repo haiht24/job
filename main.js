@@ -1783,4 +1783,5 @@ function sliceAndContinueAddJob() {
 // testAddJob();
 
 // first of all step
+console.time('get100Jobs');
 buildJSON_existedJobs_inSJB();
