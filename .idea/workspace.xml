@@ -167,22 +167,12 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="950" column="66" lean-forward="false" selection-start-line="950" selection-start-column="66" selection-end-line="950" selection-end-column="66" />
+            <state relative-caret-position="236">
+              <caret line="971" column="54" lean-forward="false" selection-start-line="971" selection-start-column="54" selection-end-line="971" selection-end-column="54" />
               <folding>
                 <element signature="e#2382#32927#0" expanded="false" />
-                <marker date="1496378306000" expanded="true" signature="64051:64055" ph="&gt;" />
+                <marker date="1496386279000" expanded="true" signature="64288:64292" ph="&gt;" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="1789" column="0" lean-forward="false" selection-start-line="1789" selection-start-column="0" selection-end-line="1791" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -191,8 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Get employer detail</find>
-      <find>buildJSONJobList</find>
       <find>addEpmployerToSmartJob</find>
       <find>schedulerBuildJSONJobs</find>
       <find>buildJSONJobsAddToSJB</find>
@@ -217,10 +205,12 @@
       <find>files</find>
       <find>start()</find>
       <find>buildJSON_existedJobs_inSJB</find>
-      <find>get100Epl</find>
       <find>get100Jobs</find>
       <find>buildJSON_existedEmployers_inSJB</find>
+      <find>insertEmployersToMongoDb</find>
       <find>.json</find>
+      <find>get100Epl</find>
+      <find>extractEmails</find>
     </findStrings>
     <replaceStrings>
       <replace>link</replace>
@@ -251,8 +241,8 @@
       <replace>employers</replace>
       <replace>fileLinksEmployers</replace>
       <replace>array-jobs-will-add-to-SmartJobBoard.json</replace>
-      <replace>buildJSONLinkEmployers</replace>
       <replace>buildJSONJobsAddToSJB</replace>
+      <replace>buildJSONLinkEmployers</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -513,12 +503,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="29188000" />
+      <workItem from="1496279902974" duration="29835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247865000" />
+    <option name="totallyTimeSpent" value="248512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,25 +555,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1258</line>
+          <line>1265</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1429</line>
+          <line>1436</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1632</line>
+          <line>1639</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1717</line>
+          <line>1724</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -595,25 +585,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1641</line>
+          <line>1648</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1776</line>
+          <line>1783</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1584</line>
+          <line>1591</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1464</line>
+          <line>1471</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -1398,44 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smart-job-board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="957" column="0" lean-forward="false" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-            <element signature="e#752#31272#0" expanded="false" />
-            <element signature="e#762#2312#0" expanded="false" />
-            <element signature="e#2322#2571#0" expanded="false" />
-            <element signature="e#2581#3391#0" expanded="false" />
-            <element signature="e#3401#13319#0" expanded="false" />
-            <element signature="e#3469#13309#0" expanded="false" />
-            <element signature="e#13329#15822#0" expanded="false" />
-            <element signature="e#15832#19464#0" expanded="false" />
-            <element signature="e#23242#24954#0" expanded="false" />
-            <element signature="e#24964#26584#0" expanded="false" />
-            <element signature="e#26594#27144#0" expanded="false" />
-            <element signature="e#27154#29919#0" expanded="false" />
-            <element signature="e#29929#30391#0" expanded="false" />
-            <element signature="e#30401#30656#0" expanded="false" />
-            <element signature="e#30666#31266#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-            <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="e#38861#39937#0" expanded="false" />
-            <element signature="n#!!block;n#addJobs#0" expanded="false" />
-            <element signature="e#43407#44258#0" expanded="false" />
-            <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
-            <element signature="e#49384#50809#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json-files/arrayEplInserted.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1593,13 +1545,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/smart-job-board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="957" column="0" lean-forward="false" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
+            <element signature="e#752#31272#0" expanded="false" />
+            <element signature="e#762#2312#0" expanded="false" />
+            <element signature="e#2322#2571#0" expanded="false" />
+            <element signature="e#2581#3391#0" expanded="false" />
+            <element signature="e#3401#13319#0" expanded="false" />
+            <element signature="e#3469#13309#0" expanded="false" />
+            <element signature="e#13329#15822#0" expanded="false" />
+            <element signature="e#15832#19464#0" expanded="false" />
+            <element signature="e#23242#24954#0" expanded="false" />
+            <element signature="e#24964#26584#0" expanded="false" />
+            <element signature="e#26594#27144#0" expanded="false" />
+            <element signature="e#27154#29919#0" expanded="false" />
+            <element signature="e#29929#30391#0" expanded="false" />
+            <element signature="e#30401#30656#0" expanded="false" />
+            <element signature="e#30666#31266#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
+            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
+            <element signature="e#38861#39937#0" expanded="false" />
+            <element signature="n#!!block;n#addJobs#0" expanded="false" />
+            <element signature="e#43407#44258#0" expanded="false" />
+            <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
+            <element signature="e#49384#50809#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="950" column="66" lean-forward="false" selection-start-line="950" selection-start-column="66" selection-end-line="950" selection-end-column="66" />
+        <state relative-caret-position="236">
+          <caret line="971" column="54" lean-forward="false" selection-start-line="971" selection-start-column="54" selection-end-line="971" selection-end-column="54" />
           <folding>
             <element signature="e#2382#32927#0" expanded="false" />
-            <marker date="1496378306000" expanded="true" signature="64051:64055" ph="&gt;" />
+            <marker date="1496386279000" expanded="true" signature="64288:64292" ph="&gt;" />
           </folding>
         </state>
       </provider>

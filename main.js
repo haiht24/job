@@ -871,7 +871,12 @@ function extractEmails(text) {
         return '';
     var arr = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
     if (arr && arr.length > 0) {
-        return arr[0];
+        var email = arr[0];
+        var lastChar = email[email.length - 1];
+        if (lastChar === '.') {
+            email = email.slice(0, -1);
+        }
+        return email;
     } else {
         return '';
     }
@@ -945,24 +950,26 @@ function insertEmployersToMongoDb(runNextStep) {
             var about = $('#empabout').html();
             var emailsContact = '';
             if (about) {
+                // this return text one email
                 emailsContact = extractEmails(about);
-                if (emailsContact) {
-                    if (emailsContact.length > 1) {
-                        console.log(emailsContact);process.exit();
-                        var emailsContact = emailsContact.filter(function (elem, index, self) {
-                            var lastChar = elem[elem.length - 1];
-                            // remove dot . in last char
-                            if (lastChar === '.') {
-                                elem = elem.slice(0, -1);
-                            }
-                            return index === self.indexOf(elem);
-                        })
-                    } else {
-                        emailsContact = [emailsContact[0].slice(0, -1)];
-                    }
-                    emailsContact = emailsContact.join();
-                }
+
+                // if (emailsContact) {
+                //     if (emailsContact.length > 1) {
+                //         var emailsContact = emailsContact.filter(function (elem, index, self) {
+                //             var lastChar = elem[elem.length - 1];
+                //             // remove dot . in last char
+                //             if (lastChar === '.') {
+                //                 elem = elem.slice(0, -1);
+                //             }
+                //             return index === self.indexOf(elem);
+                //         })
+                //     } else {
+                //         emailsContact = [emailsContact[0].slice(0, -1)];
+                //     }
+                //     emailsContact = emailsContact.join();
+                // }
             }
+            console.log(emailsContact);process.exit();
             var etc = $('.job-title-etc h2').text();
             var name = $('.job-title-etc h1').text();
             var logoUrl = $('.employer-logo img').attr('src');
