@@ -167,12 +167,22 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="971" column="54" lean-forward="false" selection-start-line="971" selection-start-column="54" selection-end-line="971" selection-end-column="54" />
+            <state relative-caret-position="157">
+              <caret line="950" column="35" lean-forward="true" selection-start-line="950" selection-start-column="35" selection-end-line="950" selection-end-column="35" />
               <folding>
                 <element signature="e#2382#32927#0" expanded="false" />
-                <marker date="1496386279000" expanded="true" signature="64288:64292" ph="&gt;" />
+                <marker date="1496386634000" expanded="true" signature="63401:63405" ph="&gt;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="876" column="14" lean-forward="true" selection-start-line="876" selection-start-column="14" selection-end-line="876" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,8 +251,8 @@
       <replace>employers</replace>
       <replace>fileLinksEmployers</replace>
       <replace>array-jobs-will-add-to-SmartJobBoard.json</replace>
-      <replace>buildJSONJobsAddToSJB</replace>
       <replace>buildJSONLinkEmployers</replace>
+      <replace>buildJSONJobsAddToSJB</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -503,12 +513,12 @@
       <workItem from="1495342513279" duration="54732000" />
       <workItem from="1495762465836" duration="38896000" />
       <workItem from="1496204399925" duration="7322000" />
-      <workItem from="1496279902974" duration="29835000" />
+      <workItem from="1496279902974" duration="30190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248512000" />
+    <option name="totallyTimeSpent" value="248867000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,25 +565,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1265</line>
+          <line>1247</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1436</line>
+          <line>1418</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1639</line>
+          <line>1621</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1724</line>
+          <line>1706</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -585,25 +595,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1648</line>
+          <line>1630</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1783</line>
+          <line>1765</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1591</line>
+          <line>1573</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1471</line>
+          <line>1453</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -1585,11 +1595,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="971" column="54" lean-forward="false" selection-start-line="971" selection-start-column="54" selection-end-line="971" selection-end-column="54" />
+        <state relative-caret-position="157">
+          <caret line="950" column="35" lean-forward="true" selection-start-line="950" selection-start-column="35" selection-end-line="950" selection-end-column="35" />
           <folding>
             <element signature="e#2382#32927#0" expanded="false" />
-            <marker date="1496386279000" expanded="true" signature="64288:64292" ph="&gt;" />
+            <marker date="1496386634000" expanded="true" signature="63401:63405" ph="&gt;" />
           </folding>
         </state>
       </provider>
