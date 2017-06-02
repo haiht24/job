@@ -948,6 +948,7 @@ function insertEmployersToMongoDb(runNextStep) {
                 emailsContact = extractEmails(about);
                 if (emailsContact) {
                     if (emailsContact.length > 1) {
+                        console.log(emailsContact);process.exit();
                         var emailsContact = emailsContact.filter(function (elem, index, self) {
                             var lastChar = elem[elem.length - 1];
                             // remove dot . in last char
@@ -1784,5 +1785,13 @@ function sliceAndContinueAddJob() {
 // testAddJob();
 
 // first of all step
-console.time('get100Jobs');
-buildJSON_existedJobs_inSJB();
+// console.time('get100Jobs');
+// buildJSON_existedJobs_inSJB();
+
+// skip to step 2
+// console.time('get100Epl');
+// buildJSON_existedEmployers_inSJB();
+
+//skip to step 3
+console.time('getListEpl');
+insertEmployersToMongoDb(true);
