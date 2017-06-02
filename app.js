@@ -518,7 +518,7 @@ var JB = require('./smart-job-board.js');
 // schedulerBuildJSONJobs();
 
 // 7 add jobs to SmartJobBoard
-JB.addJobsToJobBoard();
+// JB.addJobsToJobBoard();
 
 // Get new job and compare with db in SJB
 // JB.buildJSON_existedJobs_inSJB();
