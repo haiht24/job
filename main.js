@@ -1412,16 +1412,26 @@ function schedulerBuildJSONJobs() {
                     var fs = require('node-fs');
                     var json = JSON.stringify(arrJobs);
                     var filePath = defaultDir + 'array-jobs-will-add-to-SmartJobBoard.json';
-                    fs.writeFile(filePath, json, null, function (err) {
-                        if (error) {
-                            console.error("write error:  " + error.message);
-                        } else {
-                            console.log('done write to file: %s', filePath);
-                            // Dang bi stop o day, co ve nhu array-jobs-will-add-to-SmartJobBoard.json chua kip co du lieu dc ghi vao
-                            console.time('addJobToSmartJob');
-                            addJobsToSJB();
-                        }
+
+                    var wstream = fs.createWriteStream(filePath);
+                    wstream.on('finish', function () {
+                        // Dang bi stop o day, co ve nhu array-jobs-will-add-to-SmartJobBoard.json chua kip co du lieu dc ghi vao
+                        console.time('addJobToSmartJob');
+                        addJobsToSJB();
                     });
+                    wstream.write(json);
+                    wstream.end();
+
+                    // fs.writeFile(filePath, json, null, function (err) {
+                    //     if (error) {
+                    //         console.error("write error:  " + error.message);
+                    //     } else {
+                    //         console.log('done write to file: %s', filePath);
+                    //         // Dang bi stop o day, co ve nhu array-jobs-will-add-to-SmartJobBoard.json chua kip co du lieu dc ghi vao
+                    //         console.time('addJobToSmartJob');
+                    //         addJobsToSJB();
+                    //     }
+                    // });
                     console.timeEnd('buildJSONJobsAddToSJB');
                 }
 
@@ -1608,14 +1618,6 @@ function addJobsToSJB() {
     }
 
     job = dataCleaned(job);
-    // var eplId = 0;
-    // for (var i = 0; i < fileArrayEplInserted.length; i++) {
-    //     var el = fileArrayEplInserted[i];
-    //     if (parseInt(job.employerId) === parseInt(el.eplId)) {
-    //         eplId = el.jbId;
-    //     }
-    // }
-    // eplId = parseInt(eplId);
 
     var eplId = 0;
     for(var i = 0; i < existedEplInSJB.length; i++){
