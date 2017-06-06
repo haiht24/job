@@ -1517,7 +1517,7 @@ function buildJSON_existedEmployers_inSJB() {
                 filePath = defaultDir + 'existed-employers-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
-                    start();
+                    // start();
                 });
                 return;
             }

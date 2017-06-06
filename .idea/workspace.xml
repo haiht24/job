@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app-bk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Job.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employer.js" afterPath="$PROJECT_DIR$/models/Employer.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,52 +32,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="helper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="347" column="82" lean-forward="true" selection-start-line="347" selection-start-column="82" selection-end-line="347" selection-end-column="82" />
+            <state relative-caret-position="161">
+              <caret line="869" column="2" lean-forward="true" selection-start-line="869" selection-start-column="2" selection-end-line="869" selection-end-column="2" />
+              <folding>
+                <element signature="e#48#530#0" expanded="false" />
+                <element signature="e#283#488#0" expanded="false" />
+                <element signature="e#355#478#0" expanded="false" />
+                <element signature="e#572#824#0" expanded="false" />
+                <element signature="e#858#36593#0" expanded="false" />
+                <element signature="e#1085#1312#0" expanded="false" />
+                <element signature="e#1143#1302#0" expanded="false" />
+                <element signature="e#1231#1288#0" expanded="false" />
+                <element signature="e#1468#35009#0" expanded="false" />
+                <element signature="e#1482#3213#0" expanded="false" />
+                <element signature="e#1557#3199#0" expanded="false" />
+                <element signature="e#3227#3508#0" expanded="false" />
+                <element signature="e#3289#3494#0" expanded="false" />
+                <element signature="e#3522#4421#0" expanded="false" />
+                <element signature="e#3618#4407#0" expanded="false" />
+                <element signature="e#4435#15253#0" expanded="false" />
+                <element signature="e#4511#15239#0" expanded="false" />
+                <element signature="e#15267#18004#0" expanded="false" />
+                <element signature="e#15335#17990#0" expanded="false" />
+                <element signature="e#18018#21942#0" expanded="false" />
+                <element signature="e#18080#21928#0" expanded="false" />
+                <element signature="e#21956#26086#0" expanded="false" />
+                <element signature="e#22027#26072#0" expanded="false" />
+                <element signature="e#26100#27996#0" expanded="false" />
+                <element signature="e#26173#27982#0" expanded="false" />
+                <element signature="e#28010#29802#0" expanded="false" />
+                <element signature="e#28084#29788#0" expanded="false" />
+                <element signature="e#29816#30426#0" expanded="false" />
+                <element signature="e#29879#30412#0" expanded="false" />
+                <element signature="e#30440#33477#0" expanded="false" />
+                <element signature="e#30521#33463#0" expanded="false" />
+                <element signature="e#33491#34006#0" expanded="false" />
+                <element signature="e#33576#33992#0" expanded="false" />
+                <element signature="e#34020#34312#0" expanded="false" />
+                <element signature="e#34096#34298#0" expanded="false" />
+                <element signature="e#34326#34999#0" expanded="false" />
+                <element signature="e#34394#34985#0" expanded="false" />
+                <element signature="e#35029#35472#0" expanded="false" />
+                <element signature="e#35120#35462#0" expanded="false" />
+                <element signature="e#35222#35448#0" expanded="false" />
+                <element signature="e#35345#35430#0" expanded="false" />
+                <element signature="e#35603#36227#0" expanded="false" />
+                <element signature="e#35675#35778#0" expanded="false" />
+                <element signature="e#36010#36062#0" expanded="false" />
+                <element signature="e#36068#36176#0" expanded="false" />
+                <element signature="e#36100#36162#0" expanded="false" />
+                <element signature="e#36285#36567#0" expanded="false" />
+                <element signature="e#36408#36519#0" expanded="false" />
+                <element signature="e#36630#37056#0" expanded="false" />
+                <element signature="e#36795#37010#0" expanded="false" />
+                <element signature="e#36915#36974#0" expanded="false" />
+                <element signature="e#37016#37050#0" expanded="false" />
+                <element signature="e#37094#37508#0" expanded="false" />
+                <element signature="e#37304#37483#0" expanded="false" />
+                <element signature="e#37355#37473#0" expanded="false" />
+                <element signature="e#37405#37459#0" expanded="false" />
+                <element signature="e#37555#37902#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Employer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart-job-board.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-job-board.js">
+      <file leaf-file-name="Job.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Job.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="957" column="0" lean-forward="false" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-                <element signature="e#752#31272#0" expanded="false" />
-                <element signature="e#762#2312#0" expanded="false" />
-                <element signature="e#2322#2571#0" expanded="false" />
-                <element signature="e#2581#3391#0" expanded="false" />
-                <element signature="e#3401#13319#0" expanded="false" />
-                <element signature="e#3469#13309#0" expanded="false" />
-                <element signature="e#13329#15822#0" expanded="false" />
-                <element signature="e#15832#19464#0" expanded="false" />
-                <element signature="e#23242#24954#0" expanded="false" />
-                <element signature="e#24964#26584#0" expanded="false" />
-                <element signature="e#26594#27144#0" expanded="false" />
-                <element signature="e#27154#29919#0" expanded="false" />
-                <element signature="e#29929#30391#0" expanded="false" />
-                <element signature="e#30401#30656#0" expanded="false" />
-                <element signature="e#30666#31266#0" expanded="false" />
-                <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-                <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-                <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-                <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-                <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
-                <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-                <element signature="e#38861#39937#0" expanded="false" />
-                <element signature="n#!!block;n#addJobs#0" expanded="false" />
-                <element signature="e#43407#44258#0" expanded="false" />
-                <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-                <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
-                <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
-                <element signature="e#49384#50809#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,13 +123,34 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="1781" column="16" lean-forward="true" selection-start-line="1781" selection-start-column="16" selection-end-line="1781" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="1518" column="68" lean-forward="true" selection-start-line="1518" selection-start-column="68" selection-end-line="1518" selection-end-column="68" />
               <folding>
+                <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+                <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+                <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
                 <element signature="e#2382#32927#0" expanded="false" />
-                <element signature="e#48610#49680#0" expanded="false" />
-                <element signature="e#53883#54032#0" expanded="false" />
-                <marker date="1496627962000" expanded="true" signature="64006:64010" ph="&gt;" />
+                <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+                <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+                <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+                <element signature="n#!!block;n#writeJSON#0" expanded="false" />
+                <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
+                <element signature="e#43185#45339#0" expanded="false" />
+                <marker date="1496717536000" expanded="true" signature="64009:64013" ph="&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="242" column="65" lean-forward="false" selection-start-line="242" selection-start-column="65" selection-end-line="242" selection-end-column="65" />
+              <folding>
+                <element signature="e#2859#3194#0" expanded="false" />
+                <element signature="e#3567#4405#0" expanded="false" />
+                <element signature="e#4674#5313#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -96,26 +160,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.replace</find>
-      <find>replace</find>
-      <find>This job already inserted</find>
-      <find>emailsContact.filter</find>
-      <find>.</find>
-      <find>arrayEplInserted</find>
-      <find>existed-employers-in-SJB.json</find>
-      <find>existed-jobs-in-SJB.json</find>
-      <find>json-files</find>
-      <find>createNeededFiles</find>
-      <find>files</find>
       <find>start()</find>
       <find>get100Jobs</find>
       <find>buildJSON_existedEmployers_inSJB</find>
-      <find>insertEmployersToMongoDb</find>
       <find>get100Epl</find>
       <find>extractEmails</find>
-      <find>getListJobs</find>
       <find>changed</find>
-      <find>arrLinks</find>
       <find>existed</find>
       <find>trackingJobsInserted.json</find>
       <find>trackingJobsInserted</find>
@@ -126,10 +176,22 @@
       <find>writeJSON</find>
       <find>.json</find>
       <find>buildJSON_existedJobs_inSJB</find>
+      <find>getEplDetailAndInsert</find>
+      <find>console.log</find>
+      <find>module</find>
+      <find>getListJobs</find>
+      <find>Epl</find>
+      <find>Employer</find>
+      <find>insertEmployersToMongoDb</find>
+      <find>Epl.insertMany(arrEpls);</find>
+      <find>schedulerAddUsers</find>
+      <find>getAndInsertJobToMongo</find>
+      <find>type</find>
+      <find>arrLinks</find>
+      <find>Jb</find>
+      <find>pushJob</find>
     </findStrings>
     <replaceStrings>
-      <replace>link</replace>
-      <replace>eplByLetter</replace>
       <replace>employeerSchema</replace>
       <replace>employer</replace>
       <replace>buildJSONJob</replace>
@@ -158,6 +220,8 @@
       <replace>array-jobs-will-add-to-SmartJobBoard.json</replace>
       <replace>buildJSONLinkEmployers</replace>
       <replace>buildJSONJobsAddToSJB</replace>
+      <replace>EmployerModel</replace>
+      <replace>Job</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -171,7 +235,6 @@
         <option value="$PROJECT_DIR$/jobs-list.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.js" />
         <option value="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" />
-        <option value="$PROJECT_DIR$/models/Employer.js" />
         <option value="$PROJECT_DIR$/link-jobs-will-crawl-data.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.js" />
@@ -194,7 +257,6 @@
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/smart-job-board.js" />
         <option value="$PROJECT_DIR$/start.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json" />
         <option value="$PROJECT_DIR$/smart-job-board.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_11.js" />
@@ -207,6 +269,10 @@
         <option value="$PROJECT_DIR$/prepare.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/existed-jobs-in-SJB.json" />
+        <option value="$PROJECT_DIR$/helper.js" />
+        <option value="$PROJECT_DIR$/models/Employer.js" />
+        <option value="$PROJECT_DIR$/models/Job.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/main.js" />
       </list>
     </option>
@@ -260,8 +326,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,8 +338,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,12 +501,12 @@
       <workItem from="1496204399925" duration="7322000" />
       <workItem from="1496279902974" duration="35804000" />
       <workItem from="1496579023876" duration="85000" />
-      <workItem from="1496626481237" duration="714000" />
+      <workItem from="1496626481237" duration="13691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255280000" />
+    <option name="totallyTimeSpent" value="268257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,8 +529,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4553846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -488,11 +568,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>837</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/main.js</url>
           <line>1773</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -512,34 +587,24 @@
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>241</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12512">
-          <caret line="544" column="1" lean-forward="false" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -561,7 +626,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/app-bk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4278">
           <caret line="216" column="49" lean-forward="false" selection-start-line="216" selection-start-column="49" selection-end-line="216" selection-end-column="49" />
@@ -597,7 +662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/app-bk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
@@ -619,7 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/app-bk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -699,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/healthecareers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -732,18 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="158">
-          <caret line="0" column="660" lean-forward="true" selection-start-line="0" selection-start-column="660" selection-end-line="0" selection-end-column="660" />
         </state>
       </provider>
     </entry>
@@ -784,27 +830,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/arrayEplInserted.json">
+    <entry file="file://$PROJECT_DIR$/json-files/trackingJobsInserted.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_13.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="2769" column="13" lean-forward="false" selection-start-line="2769" selection-start-column="5" selection-end-line="2769" selection-end-column="13" />
+        <state relative-caret-position="161">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare.js" />
     <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-SmartJobBoard.json">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -817,76 +857,322 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/trackingJobsInserted.json">
+    <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="158">
+          <caret line="0" column="660" lean-forward="true" selection-start-line="0" selection-start-column="660" selection-end-line="0" selection-end-column="660" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/arrayEplInserted.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="2771" column="3" lean-forward="true" selection-start-line="2771" selection-start-column="3" selection-end-line="2771" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-bk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="347" column="82" lean-forward="false" selection-start-line="347" selection-start-column="82" selection-end-line="347" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-job-board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="1354" column="6" lean-forward="false" selection-start-line="1354" selection-start-column="0" selection-end-line="1354" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
+            <element signature="e#427#616#0" expanded="false" />
+            <element signature="e#473#610#0" expanded="false" />
+            <element signature="e#551#600#0" expanded="false" />
+            <element signature="e#752#31272#0" expanded="false" />
+            <element signature="e#762#2312#0" expanded="false" />
+            <element signature="e#824#2302#0" expanded="false" />
+            <element signature="e#2322#2571#0" expanded="false" />
+            <element signature="e#2376#2561#0" expanded="false" />
+            <element signature="e#2581#3391#0" expanded="false" />
+            <element signature="e#2664#3381#0" expanded="false" />
+            <element signature="e#3401#13319#0" expanded="false" />
+            <element signature="e#3469#13309#0" expanded="false" />
+            <element signature="e#13329#15822#0" expanded="false" />
+            <element signature="e#13389#15812#0" expanded="false" />
+            <element signature="e#15832#19464#0" expanded="false" />
+            <element signature="e#15886#19454#0" expanded="false" />
+            <element signature="e#19474#23232#0" expanded="false" />
+            <element signature="e#19537#23222#0" expanded="false" />
+            <element signature="e#23242#24954#0" expanded="false" />
+            <element signature="e#23307#24944#0" expanded="false" />
+            <element signature="e#24964#26584#0" expanded="false" />
+            <element signature="e#25030#26574#0" expanded="false" />
+            <element signature="e#26594#27144#0" expanded="false" />
+            <element signature="e#26649#27134#0" expanded="false" />
+            <element signature="e#27154#29919#0" expanded="false" />
+            <element signature="e#27227#29909#0" expanded="false" />
+            <element signature="e#29929#30391#0" expanded="false" />
+            <element signature="e#30001#30381#0" expanded="false" />
+            <element signature="e#30401#30656#0" expanded="false" />
+            <element signature="e#30464#30646#0" expanded="false" />
+            <element signature="e#30666#31266#0" expanded="false" />
+            <element signature="e#30721#31256#0" expanded="false" />
+            <element signature="e#31286#31667#0" expanded="false" />
+            <element signature="e#31361#31661#0" expanded="false" />
+            <element signature="e#31447#31651#0" expanded="false" />
+            <element signature="e#31560#31637#0" expanded="false" />
+            <element signature="e#31784#32336#0" expanded="false" />
+            <element signature="e#31850#31945#0" expanded="false" />
+            <element signature="e#32155#32199#0" expanded="false" />
+            <element signature="e#32203#32293#0" expanded="false" />
+            <element signature="e#32229#32283#0" expanded="false" />
+            <element signature="e#32384#32636#0" expanded="false" />
+            <element signature="e#32493#32596#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="e#32831#32861#0" expanded="false" />
+            <element signature="e#32865#32891#0" expanded="false" />
+            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+            <element signature="e#33115#33260#0" expanded="false" />
+            <element signature="e#33154#33254#0" expanded="false" />
+            <element signature="e#33198#33244#0" expanded="false" />
+            <element signature="e#33330#33625#0" expanded="false" />
+            <element signature="e#33485#33621#0" expanded="false" />
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="e#33865#34042#0" expanded="false" />
+            <element signature="e#33925#34036#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
+            <element signature="e#35036#35890#0" expanded="false" />
+            <element signature="e#35089#35884#0" expanded="false" />
+            <element signature="e#35512#35698#0" expanded="false" />
+            <element signature="e#35715#35872#0" expanded="false" />
+            <element signature="e#35733#35759#0" expanded="false" />
+            <element signature="n#!!block;n#schedulerAddUsers#0" expanded="false" />
+            <element signature="e#36008#37045#0" expanded="false" />
+            <element signature="e#36062#37028#0" expanded="false" />
+            <element signature="e#36125#36269#0" expanded="false" />
+            <element signature="e#36273#37018#0" expanded="false" />
+            <element signature="e#36803#37002#0" expanded="false" />
+            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
+            <element signature="e#37203#37334#0" expanded="false" />
+            <element signature="n#!!block;n#addEmployer#0" expanded="false" />
+            <element signature="e#37487#37755#0" expanded="false" />
+            <element signature="e#37581#37749#0" expanded="false" />
+            <element signature="e#38215#38439#0" expanded="false" />
+            <element signature="e#38445#38461#0" expanded="false" />
+            <element signature="e#38861#39937#0" expanded="false" />
+            <element signature="e#39315#39931#0" expanded="false" />
+            <element signature="e#39329#39406#0" expanded="false" />
+            <element signature="e#39420#39503#0" expanded="false" />
+            <element signature="e#39517#39600#0" expanded="false" />
+            <element signature="e#39614#39708#0" expanded="false" />
+            <element signature="e#39722#39825#0" expanded="false" />
+            <element signature="e#39839#39921#0" expanded="false" />
+            <element signature="e#39957#40096#0" expanded="false" />
+            <element signature="e#40124#41017#0" expanded="false" />
+            <element signature="e#40175#40333#0" expanded="false" />
+            <element signature="e#40378#40914#0" expanded="false" />
+            <element signature="e#40539#40719#0" expanded="false" />
+            <element signature="e#40639#40705#0" expanded="false" />
+            <element signature="e#40752#40827#0" expanded="false" />
+            <element signature="e#40918#41011#0" expanded="false" />
+            <element signature="n#!!block;n#addJobs#0" expanded="false" />
+            <element signature="e#41489#41681#0" expanded="false" />
+            <element signature="e#41807#42120#0" expanded="false" />
+            <element signature="e#41863#42114#0" expanded="false" />
+            <element signature="e#41959#42104#0" expanded="false" />
+            <element signature="e#42156#42492#0" expanded="false" />
+            <element signature="e#42214#42486#0" expanded="false" />
+            <element signature="e#42324#42476#0" expanded="false" />
+            <element signature="e#42642#42999#0" expanded="false" />
+            <element signature="e#42685#42993#0" expanded="false" />
+            <element signature="e#43098#43247#0" expanded="false" />
+            <element signature="e#43201#43241#0" expanded="false" />
+            <element signature="e#43407#44258#0" expanded="false" />
+            <element signature="e#43835#44252#0" expanded="false" />
+            <element signature="e#43849#43922#0" expanded="false" />
+            <element signature="e#43936#44033#0" expanded="false" />
+            <element signature="e#44047#44134#0" expanded="false" />
+            <element signature="e#44148#44152#0" expanded="false" />
+            <element signature="e#44319#44458#0" expanded="false" />
+            <element signature="e#44486#45535#0" expanded="false" />
+            <element signature="e#44537#44748#0" expanded="false" />
+            <element signature="e#44793#45350#0" expanded="false" />
+            <element signature="e#44833#44937#0" expanded="false" />
+            <element signature="e#45208#45229#0" expanded="false" />
+            <element signature="e#45354#45529#0" expanded="false" />
+            <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
+            <element signature="e#46137#47187#0" expanded="false" />
+            <element signature="e#46178#46311#0" expanded="false" />
+            <element signature="e#46404#46527#0" expanded="false" />
+            <element signature="e#46566#47050#0" expanded="false" />
+            <element signature="e#46751#47011#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
+            <element signature="e#47606#48911#0" expanded="false" />
+            <element signature="e#47647#47780#0" expanded="false" />
+            <element signature="e#47888#48255#0" expanded="false" />
+            <element signature="e#48111#48223#0" expanded="false" />
+            <element signature="e#48299#48768#0" expanded="false" />
+            <element signature="e#48481#48730#0" expanded="false" />
+            <element signature="n#!!block;n#writeExistedJobsToJSON#0" expanded="false" />
+            <element signature="e#49129#49250#0" expanded="false" />
+            <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
+            <element signature="e#49384#50809#0" expanded="false" />
+            <element signature="e#49438#50792#0" expanded="false" />
+            <element signature="e#49497#50215#0" expanded="false" />
+            <element signature="e#49568#49764#0" expanded="false" />
+            <element signature="e#49782#49802#0" expanded="false" />
+            <element signature="e#50219#50781#0" expanded="false" />
+            <element signature="e#50528#50701#0" expanded="false" />
+            <element signature="e#50846#51635#0" expanded="false" />
+            <element signature="e#50888#50972#0" expanded="false" />
+            <element signature="e#51009#51210#0" expanded="false" />
+            <element signature="e#51022#51102#0" expanded="false" />
+            <element signature="e#51112#51204#0" expanded="false" />
+            <element signature="e#51257#51417#0" expanded="false" />
+            <element signature="e#51270#51364#0" expanded="false" />
+            <element signature="e#51374#51411#0" expanded="false" />
+            <element signature="e#51469#51633#0" expanded="false" />
+            <element signature="e#51482#51580#0" expanded="false" />
+            <element signature="e#51590#51627#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="869" column="2" lean-forward="true" selection-start-line="869" selection-start-column="2" selection-end-line="869" selection-end-column="2" />
+          <folding>
+            <element signature="e#48#530#0" expanded="false" />
+            <element signature="e#283#488#0" expanded="false" />
+            <element signature="e#355#478#0" expanded="false" />
+            <element signature="e#572#824#0" expanded="false" />
+            <element signature="e#858#36593#0" expanded="false" />
+            <element signature="e#1085#1312#0" expanded="false" />
+            <element signature="e#1143#1302#0" expanded="false" />
+            <element signature="e#1231#1288#0" expanded="false" />
+            <element signature="e#1468#35009#0" expanded="false" />
+            <element signature="e#1482#3213#0" expanded="false" />
+            <element signature="e#1557#3199#0" expanded="false" />
+            <element signature="e#3227#3508#0" expanded="false" />
+            <element signature="e#3289#3494#0" expanded="false" />
+            <element signature="e#3522#4421#0" expanded="false" />
+            <element signature="e#3618#4407#0" expanded="false" />
+            <element signature="e#4435#15253#0" expanded="false" />
+            <element signature="e#4511#15239#0" expanded="false" />
+            <element signature="e#15267#18004#0" expanded="false" />
+            <element signature="e#15335#17990#0" expanded="false" />
+            <element signature="e#18018#21942#0" expanded="false" />
+            <element signature="e#18080#21928#0" expanded="false" />
+            <element signature="e#21956#26086#0" expanded="false" />
+            <element signature="e#22027#26072#0" expanded="false" />
+            <element signature="e#26100#27996#0" expanded="false" />
+            <element signature="e#26173#27982#0" expanded="false" />
+            <element signature="e#28010#29802#0" expanded="false" />
+            <element signature="e#28084#29788#0" expanded="false" />
+            <element signature="e#29816#30426#0" expanded="false" />
+            <element signature="e#29879#30412#0" expanded="false" />
+            <element signature="e#30440#33477#0" expanded="false" />
+            <element signature="e#30521#33463#0" expanded="false" />
+            <element signature="e#33491#34006#0" expanded="false" />
+            <element signature="e#33576#33992#0" expanded="false" />
+            <element signature="e#34020#34312#0" expanded="false" />
+            <element signature="e#34096#34298#0" expanded="false" />
+            <element signature="e#34326#34999#0" expanded="false" />
+            <element signature="e#34394#34985#0" expanded="false" />
+            <element signature="e#35029#35472#0" expanded="false" />
+            <element signature="e#35120#35462#0" expanded="false" />
+            <element signature="e#35222#35448#0" expanded="false" />
+            <element signature="e#35345#35430#0" expanded="false" />
+            <element signature="e#35603#36227#0" expanded="false" />
+            <element signature="e#35675#35778#0" expanded="false" />
+            <element signature="e#36010#36062#0" expanded="false" />
+            <element signature="e#36068#36176#0" expanded="false" />
+            <element signature="e#36100#36162#0" expanded="false" />
+            <element signature="e#36285#36567#0" expanded="false" />
+            <element signature="e#36408#36519#0" expanded="false" />
+            <element signature="e#36630#37056#0" expanded="false" />
+            <element signature="e#36795#37010#0" expanded="false" />
+            <element signature="e#36915#36974#0" expanded="false" />
+            <element signature="e#37016#37050#0" expanded="false" />
+            <element signature="e#37094#37508#0" expanded="false" />
+            <element signature="e#37304#37483#0" expanded="false" />
+            <element signature="e#37355#37473#0" expanded="false" />
+            <element signature="e#37405#37459#0" expanded="false" />
+            <element signature="e#37555#37902#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Employer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Job.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="347" column="82" lean-forward="true" selection-start-line="347" selection-start-column="82" selection-end-line="347" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_13.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prepare.js" />
-    <entry file="file://$PROJECT_DIR$/smart-job-board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="957" column="0" lean-forward="false" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="242" column="65" lean-forward="false" selection-start-line="242" selection-start-column="65" selection-end-line="242" selection-end-column="65" />
           <folding>
-            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-            <element signature="e#752#31272#0" expanded="false" />
-            <element signature="e#762#2312#0" expanded="false" />
-            <element signature="e#2322#2571#0" expanded="false" />
-            <element signature="e#2581#3391#0" expanded="false" />
-            <element signature="e#3401#13319#0" expanded="false" />
-            <element signature="e#3469#13309#0" expanded="false" />
-            <element signature="e#13329#15822#0" expanded="false" />
-            <element signature="e#15832#19464#0" expanded="false" />
-            <element signature="e#23242#24954#0" expanded="false" />
-            <element signature="e#24964#26584#0" expanded="false" />
-            <element signature="e#26594#27144#0" expanded="false" />
-            <element signature="e#27154#29919#0" expanded="false" />
-            <element signature="e#29929#30391#0" expanded="false" />
-            <element signature="e#30401#30656#0" expanded="false" />
-            <element signature="e#30666#31266#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-            <element signature="n#!!block;n#uploadToS3#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <element signature="e#38861#39937#0" expanded="false" />
-            <element signature="n#!!block;n#addJobs#0" expanded="false" />
-            <element signature="e#43407#44258#0" expanded="false" />
-            <element signature="n#!!block;n#sliceAndContinueAddJob#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
-            <element signature="e#49384#50809#0" expanded="false" />
+            <element signature="e#2859#3194#0" expanded="false" />
+            <element signature="e#3567#4405#0" expanded="false" />
+            <element signature="e#4674#5313#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1781" column="16" lean-forward="true" selection-start-line="1781" selection-start-column="16" selection-end-line="1781" selection-end-column="16" />
+        <state relative-caret-position="360">
+          <caret line="1518" column="68" lean-forward="true" selection-start-line="1518" selection-start-column="68" selection-end-line="1518" selection-end-column="68" />
           <folding>
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
             <element signature="e#2382#32927#0" expanded="false" />
-            <element signature="e#48610#49680#0" expanded="false" />
-            <element signature="e#53883#54032#0" expanded="false" />
-            <marker date="1496627962000" expanded="true" signature="64006:64010" ph="&gt;" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="n#!!block;n#writeJSON#0" expanded="false" />
+            <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
+            <element signature="e#43185#45339#0" expanded="false" />
+            <marker date="1496717536000" expanded="true" signature="64009:64013" ph="&gt;" />
           </folding>
         </state>
       </provider>
