@@ -19,10 +19,6 @@ var jobSchema = new Schema({
     updated_at: { type: Date, default: Date.now }
 });
 
-// jobSchema.pre('validate', function (next) {
-//
-// });
-
 jobSchema.pre('save', function(next) {
     var self = this;
     JobModel.find({jobId : self.jobId}, function (err, docs) {

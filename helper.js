@@ -800,15 +800,16 @@ module.exports = {
             }
         }
 
-        job.specialty = catsConverted;
+        // job.specialty = [];
+        job.catsConverted = catsConverted;
         // remove text Show Contact Details from description
         if (job.description) {
             if (job.description.indexOf('Show Contact Details') > -1) {
                 job.description = job.description.replace(/Show Contact Details/g, '');
             }
             // extract How to apply, by Email or Website
-            var emails = extractEmails(job.description);
-            var websites = extractWebsite(job.description);
+            var emails = this.extractWebsite(job.description);
+            var websites = this.extractWebsite(job.description);
             var howToApply = '';
             if (emails) {
                 howToApply = emails;

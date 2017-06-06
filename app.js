@@ -15,7 +15,7 @@ mongoose.connect(strConnection);
 /* Functions */
 
 // Get and insert employer list to mongodb (43 seconds)
-function insertEmployersToMongoDb(runNextStep) {
+function insertEmployersToMongoDb(next) {
     // Get employer detail
     var epl;
     var crlGetEplDetail = new Crawler({
@@ -51,6 +51,7 @@ function insertEmployersToMongoDb(runNextStep) {
                 url: thisUrl
             };
 
+            // insert epl to mongodb
             var newEpl = new Epl(epl);
             newEpl.save(function (err) {
                 if (err) throw err;
@@ -62,8 +63,9 @@ function insertEmployersToMongoDb(runNextStep) {
     });
     crlGetEplDetail.on('drain', function () {
         console.timeEnd('getEplDetailAndInsert');
-        if (runNextStep === true) {
-            // getAndInsertJobToMongo(true);
+        if (next === true) {
+            // Them epl moi thanh cong, gio add job
+            getAndInsertJobToMongo(true);
         } else {
             process.exit(0);
         }
@@ -95,13 +97,14 @@ function insertEmployersToMongoDb(runNextStep) {
     crl.on('drain', function () {
         console.timeEnd('getListEpl');
         console.log(linkEpl.length);
+
         console.time('getEplDetailAndInsert');
         crlGetEplDetail.queue(linkEpl);
     });
 }
 
 /* Crawl all jobs and insert them to mongodb */
-function getAndInsertJobToMongo() {
+function getAndInsertJobToMongo(next) {
     var arrLinks = [];
     var crl = new Crawler({
         rateLimit: 0,
@@ -219,17 +222,6 @@ function getAndInsertJobToMongo() {
                         console.log('Created job: %s', job.title);
                     }
                 });
-
-                // Viet function check exist ra ngoai roi moi push
-                // Epl.update(
-                //     {eplId: employerId},
-                //     {$push: {jobs: job}},
-                //     function (err) {
-                //         if (err) console.log(err);
-                //         else console.log('Employer %s have jobs changed', employerId);
-                //     }
-                // );
-
                 done();
             }
         });
@@ -241,13 +233,12 @@ function getAndInsertJobToMongo() {
             setTimeout(function () {
                 console.timeEnd('pushJob');
                 // insert xong job moi vao mongo, gio add vao sjb
-                // if (runNextStep === true) {
-                //     // step 5
-                //     console.time('addEpmployerToSmartJob');
-                //     schedulerAddUsers();
-                // } else {
-                //     process.exit(0);
-                // }
+
+                if (next === true) {
+                    addNewEplToSJB(true);
+                } else {
+                    process.exit(0);
+                }
             }, 3000);
         });
     }
@@ -268,8 +259,278 @@ function getAndInsertJobToMongo() {
     });
 }
 
-/* Run code */
-// console.time('getListEpl');
-// insertEmployersToMongoDb();
+// Compare epl mongo and sjb
+function compareEpl() {
+    var SJBEpl = require('./json-files/existed-employers-in-SJB.json');
+    for(var i = 0; i < SJBEpl.length; i++){
+        var epl = SJBEpl[i];
+        var sourceEplId = parseInt(epl.sourceEplId);
+        var sjbEplId = parseInt(epl.sjbEplId);
+        Epl.update({eplId: sourceEplId}, {$set: {sjbId: sjbEplId}}, function (err) {
+            if(err)
+                console.log('update fail');
+            else
+                console.log('update success');
+        });
+    }
+}
+// Compare job mongo and sjb
+function compareJob() {
+    var SJBJob = require('./json-files/existed-jobs-in-SJB.json');
+    for(var i = 0; i < SJBJob.length; i++){
+        var job = SJBJob[i];
+        var sourceJobId = parseInt(job.sourceJobId);
+        var ejbJobId = parseInt(job.ejbJobId);
+        Jb.update({jobId: sourceJobId}, {$set: {sjbId: ejbJobId}}, function (err) {
+            if(err)
+                console.log('update fail');
+            else
+                console.log('update success');
+        });
+    }
+}
 
-getAndInsertJobToMongo();
+// insert new epl to sjb
+function addNewEplToSJB(next) {
+    Epl.findOne({sjbId: 0}, function (err, data) {
+        if(err) throw err;
+
+        if(data){
+            var originPath = 'https://health.mysmartjobboard.com/api/';
+            var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
+            var url = originPath + 'employers?api_key=' + apiKey;
+
+            var obj = data;
+            console.log('new epl %s', obj.name);
+
+            var email = helper.randomEmail();
+            var cpnName = obj.name,
+                cpnDescription = obj.about,
+                etc = obj.etc,
+                logo = obj.logo,
+                banner = obj.banner,
+                source = obj.url,
+                emailContacts = obj.emailsContact
+            ;
+
+            // dont insert empty etc
+            if (etc === ',  ')
+                etc = '';
+            if (etc[0] === ',')
+                etc = etc.substring(1).trim();
+            if (cpnName === '') {
+                // if empty company name then git it from url ahihi
+                var arrUrl = obj.url.split('/');
+                arrUrl = arrUrl[arrUrl.length - 2];
+                arrUrl = arrUrl.split('-').join(' ');
+                cpnName = arrUrl;
+            }
+
+            var body = {
+                'password': 'yourdefaultpassword',
+                'email': email,
+                'registration_date': '',
+                'active': 1,
+                'featured': 0,
+                'company_name': cpnName,
+                'company_description': cpnDescription,
+                'full_name': cpnName,
+                'location': etc,
+                'phone': '0966666666',
+                'logo': logo,
+                'website': helper.extractWebsite(cpnDescription),
+                'custom_fields': [
+                    {
+                        name: 'Logo Url',
+                        value: logo
+                    },
+                    {
+                        name: 'Banner Url',
+                        value: banner
+                    },
+                    {
+                        name: 'Source Url',
+                        value: source
+                    },
+                    {
+                        name: 'Email Contacts',
+                        value: emailContacts
+                    },
+                    {
+                        name: "Source Employer Id",
+                        value: obj.eplId.toString()
+                    },
+                    {
+                        name: "Employer Logo",
+                        value: logo
+                    }
+                ]
+            };
+
+            request.post({
+                method: 'POST', url: url, headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+            }, function (err, res, body) {
+                if (typeof res.statusCode === 'undefined') {
+                    console.log('###########################Error############################');
+                    console.log(res);
+                    process.exit();
+                }
+                if (!err && res.statusCode === 201) {
+                    console.log('successful');
+                    body = JSON.parse(body);
+                    var sjbEplId = body.id;
+                    var updateThisEplToMongodb = 0;
+                    for(var i = 0; i < body.custom_fields.length; i++){
+                        if(body.custom_fields[i].name === 'Source Employer Id'){
+                            updateThisEplToMongodb = parseInt(body.custom_fields[i].value);
+                        }
+                    }
+                    if(updateThisEplToMongodb > 0){
+                        Epl.update({eplId: updateThisEplToMongodb},
+                            {$set: {sjbId: sjbEplId}},
+                            function (err) {
+                                if(err) throw err;
+                                console.log('Update back to mongo success');
+                                // De quy, tiep tuc tim epl moi va insert vao sjb
+                                addNewEplToSJB(true);
+                            }
+                        );
+                    }
+
+                } else {
+                    console.log('Code %s', res.statusCode);
+                    console.log(res);
+                }
+            });
+        }
+        else{
+            // Sau khi add new het epl, chuyen sang add job vao sjb
+            addNewJobToSJB();
+        }
+    });
+}
+
+// insert new job to sjb
+function addNewJobToSJB() {
+    var originPath = 'https://health.mysmartjobboard.com/api/';
+    var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
+    var url = originPath + 'jobs?api_key=' + apiKey;
+
+    // Tim cac jobs moi, co sjbId = 0
+    Jb.find({sjbId: 0}, function (err, data) {
+        if(err) throw err;
+        if(data.length > 0){
+            console.log('New jobs found %s', data.length);
+            var j = data[0];
+            addSingleJobToSJB(j);
+        }else{
+            console.timeEnd('TongThoiGian');
+            console.log('Exit app');
+            process.exit();
+        }
+    }).limit(1);
+
+    function addSingleJobToSJB(job) {
+        var arrTags = [];
+        if (job.specialty)
+            arrTags = job.specialty.split('<br>');
+        var tags = '';
+        if (arrTags.length > 0) {
+            for (var i = 0; i < arrTags.length; i++) {
+                tags += arrTags[i] + ' job';
+                tags = tags.replace(/NP/g, 'Nurse Practitioner');
+                tags = tags.replace(/RN/g, 'Registered Nurse');
+                tags = tags.replace(/NP/g, 'Physician Assistant');
+                if (i !== arrTags.length - 1)
+                    tags += ', ';
+            }
+        }
+
+        job = helper.dataCleaned(job);
+
+        // Tim sjbEplId trong epl tuong ung o mongo
+        Epl.findOne({eplId: job.employerId}, {sjbId: 1}, function (err, result) {
+            if(err) throw err;
+            if(result){
+                var sjbId = result.sjbId;
+                var title = job.title ? job.title : 'default job title';
+                var url = originPath + 'jobs?api_key=' + apiKey;
+                var data = {
+                    "active": 1,
+                    "featured": 0,
+                    "activation_date": job.date,
+                    "employer_id": sjbId,
+                    "title": title,
+                    "job_type": job.type,
+                    "categories": job.catsConverted,
+                    "location": job.location,
+                    "description": job.description,
+                    "custom_fields": [
+                        {
+                            name: 'Tags',
+                            value: tags
+                        },
+                        {
+                            name: 'Source Employer Id',
+                            value: job.employerId
+                        },
+                        {
+                            name: 'Source Job Id',
+                            value: job.jobId
+                        }
+                    ]
+                };
+
+                if(job.howToApply){
+                    data.how_to_apply = job.howToApply;
+                }
+
+                request.post({
+                    method: 'POST', url: url, headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
+                }, function (err, res, body) {
+                    if (typeof res.statusCode === 'undefined') {
+                        console.log('###########################Error############################');
+                        console.log(res);
+                    }
+                    if (!err && res.statusCode === 201) {
+                        body = JSON.parse(body);
+                        // update inserted sjbId to job in mongodb
+                        Jb.update({jobId: job.jobId},
+                            {$set: {sjbId: body.id}},
+                            function (err) {
+                                if(err) throw err;
+                                console.log('Added new job: sjbId %s | mongoId: %s', body.id, job.jobId);
+
+                                // De quy, tiep tuc tim job moi trong mongo va add vao sjb
+                                addNewJobToSJB();
+                            }
+                        )
+                    } else {
+                        console.log('########################Error when add new job to SJB################################');
+                        console.log('Code %s', res.statusCode);
+                        console.log('#########################Data sending###############################');
+                        console.log(data);
+                    }
+                });
+
+            }
+        })
+    }
+}
+
+/* Run code */
+/* Chay tu dau tien */
+// console.time('TongThoiGian');
+// console.time('getListEpl');
+// insertEmployersToMongoDb(true);
+/* End */
+
+/* Chay tach roi */
+
+// getAndInsertJobToMongo();
+
+// compareEpl();
+// compareJob();
+
+// addNewEplToSJB(true);
+// addNewJobToSJB();

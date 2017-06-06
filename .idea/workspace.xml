@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app-bk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Job.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helper.js" afterPath="$PROJECT_DIR$/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employer.js" afterPath="$PROJECT_DIR$/models/Employer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Job.js" afterPath="$PROJECT_DIR$/models/Job.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,17 +29,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Employer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Employer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Job.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Job.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="1250" column="20" lean-forward="false" selection-start-line="1250" selection-start-column="10" selection-end-line="1250" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+                <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+                <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
+                <element signature="e#2382#32927#0" expanded="false" />
+                <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+                <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+                <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+                <element signature="n#!!block;n#writeJSON#0" expanded="false" />
+                <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
+                <element signature="e#43185#45339#0" expanded="false" />
+                <element signature="n#!!block;n#addEmployer#0" expanded="false" />
+                <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
+                <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
+                <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
+                <element signature="n#!!block;n#updateInserted#0" expanded="false" />
+                <marker date="1496721353000" expanded="true" signature="63945:63949" ph="&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="helper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="869" column="2" lean-forward="true" selection-start-line="869" selection-start-column="2" selection-end-line="869" selection-end-column="2" />
+            <state relative-caret-position="-35">
+              <caret line="803" column="42" lean-forward="false" selection-start-line="803" selection-start-column="42" selection-end-line="803" selection-end-column="42" />
               <folding>
                 <element signature="e#48#530#0" expanded="false" />
                 <element signature="e#283#488#0" expanded="false" />
                 <element signature="e#355#478#0" expanded="false" />
                 <element signature="e#572#824#0" expanded="false" />
-                <element signature="e#858#36593#0" expanded="false" />
                 <element signature="e#1085#1312#0" expanded="false" />
                 <element signature="e#1143#1302#0" expanded="false" />
                 <element signature="e#1231#1288#0" expanded="false" />
@@ -75,82 +118,36 @@
                 <element signature="e#34096#34298#0" expanded="false" />
                 <element signature="e#34326#34999#0" expanded="false" />
                 <element signature="e#34394#34985#0" expanded="false" />
-                <element signature="e#35029#35472#0" expanded="false" />
-                <element signature="e#35120#35462#0" expanded="false" />
-                <element signature="e#35222#35448#0" expanded="false" />
-                <element signature="e#35345#35430#0" expanded="false" />
-                <element signature="e#35603#36227#0" expanded="false" />
-                <element signature="e#35675#35778#0" expanded="false" />
-                <element signature="e#36010#36062#0" expanded="false" />
-                <element signature="e#36068#36176#0" expanded="false" />
-                <element signature="e#36100#36162#0" expanded="false" />
-                <element signature="e#36285#36567#0" expanded="false" />
-                <element signature="e#36408#36519#0" expanded="false" />
-                <element signature="e#36630#37056#0" expanded="false" />
-                <element signature="e#36795#37010#0" expanded="false" />
-                <element signature="e#36915#36974#0" expanded="false" />
-                <element signature="e#37016#37050#0" expanded="false" />
-                <element signature="e#37094#37508#0" expanded="false" />
-                <element signature="e#37304#37483#0" expanded="false" />
-                <element signature="e#37355#37473#0" expanded="false" />
-                <element signature="e#37405#37459#0" expanded="false" />
-                <element signature="e#37555#37902#0" expanded="false" />
+                <element signature="e#35710#35813#0" expanded="false" />
+                <element signature="e#36056#36108#0" expanded="false" />
+                <element signature="e#36114#36222#0" expanded="false" />
+                <element signature="e#36146#36208#0" expanded="false" />
+                <element signature="e#36331#36613#0" expanded="false" />
+                <element signature="e#36454#36565#0" expanded="false" />
+                <element signature="e#36676#37102#0" expanded="false" />
+                <element signature="e#36841#37056#0" expanded="false" />
+                <element signature="e#36961#37020#0" expanded="false" />
+                <element signature="e#37062#37096#0" expanded="false" />
+                <element signature="e#37140#37554#0" expanded="false" />
+                <element signature="e#37350#37529#0" expanded="false" />
+                <element signature="e#37401#37519#0" expanded="false" />
+                <element signature="e#37451#37505#0" expanded="false" />
+                <element signature="e#37601#37948#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Employer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Job.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Job.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="1518" column="68" lean-forward="true" selection-start-line="1518" selection-start-column="68" selection-end-line="1518" selection-end-column="68" />
-              <folding>
-                <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-                <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-                <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-                <element signature="e#2382#32927#0" expanded="false" />
-                <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-                <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-                <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-                <element signature="n#!!block;n#writeJSON#0" expanded="false" />
-                <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
-                <element signature="e#43185#45339#0" expanded="false" />
-                <marker date="1496717536000" expanded="true" signature="64009:64013" ph="&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="242" column="65" lean-forward="false" selection-start-line="242" selection-start-column="65" selection-end-line="242" selection-end-column="65" />
+            <state relative-caret-position="43">
+              <caret line="521" column="22" lean-forward="true" selection-start-line="521" selection-start-column="22" selection-end-line="521" selection-end-column="22" />
               <folding>
-                <element signature="e#2859#3194#0" expanded="false" />
-                <element signature="e#3567#4405#0" expanded="false" />
-                <element signature="e#4674#5313#0" expanded="false" />
+                <element signature="e#5705#8063#0" expanded="false" />
+                <element signature="n#!!block;n#compareEpl#0" expanded="false" />
+                <element signature="n#!!block;n#compareJob#0" expanded="false" />
+                <element signature="e#11357#12702#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -160,21 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>start()</find>
-      <find>get100Jobs</find>
-      <find>buildJSON_existedEmployers_inSJB</find>
-      <find>get100Epl</find>
-      <find>extractEmails</find>
-      <find>changed</find>
-      <find>existed</find>
-      <find>trackingJobsInserted.json</find>
-      <find>trackingJobsInserted</find>
-      <find>addEmployer</find>
-      <find>addJobsToSJB();</find>
-      <find>addJobsToSJB</find>
-      <find>filePath = defaultDir</find>
-      <find>writeJSON</find>
-      <find>.json</find>
       <find>buildJSON_existedJobs_inSJB</find>
       <find>getEplDetailAndInsert</find>
       <find>console.log</find>
@@ -182,18 +164,31 @@
       <find>getListJobs</find>
       <find>Epl</find>
       <find>Employer</find>
-      <find>insertEmployersToMongoDb</find>
       <find>Epl.insertMany(arrEpls);</find>
       <find>schedulerAddUsers</find>
-      <find>getAndInsertJobToMongo</find>
-      <find>type</find>
       <find>arrLinks</find>
-      <find>Jb</find>
+      <find>type</find>
+      <find>buildJSON_existedEmployers_inSJB</find>
+      <find>epl</find>
       <find>pushJob</find>
+      <find>update</find>
+      <find>originPath</find>
+      <find>randomEmail</find>
+      <find>cpnName</find>
+      <find>getAndInsertJobToMongo</find>
+      <find>extractEmails</find>
+      <find>addJobsToSJB()</find>
+      <find>addJobToSmartJob</find>
+      <find>extractWebsite</find>
+      <find>dataCleaned</find>
+      <find>limit</find>
+      <find>insertEmployersToMongoDb</find>
+      <find>Job ex</find>
+      <find>Jb</find>
+      <find>length</find>
+      <find>addNewEplToSJB</find>
     </findStrings>
     <replaceStrings>
-      <replace>employeerSchema</replace>
-      <replace>employer</replace>
       <replace>buildJSONJob</replace>
       <replace>buildJSONJobList</replace>
       <replace>getListJobs</replace>
@@ -220,8 +215,10 @@
       <replace>array-jobs-will-add-to-SmartJobBoard.json</replace>
       <replace>buildJSONLinkEmployers</replace>
       <replace>buildJSONJobsAddToSJB</replace>
-      <replace>EmployerModel</replace>
       <replace>Job</replace>
+      <replace>job</replace>
+      <replace>EmployerModel</replace>
+      <replace>next</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -249,7 +246,6 @@
         <option value="$PROJECT_DIR$/existed-jobs-in-SJB.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.js" />
-        <option value="$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/array-jobs-will-add-to-wordpress.json" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/.git/config" />
         <option value="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
@@ -263,17 +259,19 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.js" />
         <option value="$PROJECT_DIR$/json-files/link-employers-will-get-jobs.json" />
         <option value="$PROJECT_DIR$/json-files/array-jobs-will-add-to-SmartJobBoard.json" />
-        <option value="$PROJECT_DIR$/json-files/existed-employers-in-SJB.json" />
         <option value="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.js" />
         <option value="$PROJECT_DIR$/prepare.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/existed-jobs-in-SJB.json" />
-        <option value="$PROJECT_DIR$/helper.js" />
         <option value="$PROJECT_DIR$/models/Employer.js" />
+        <option value="$PROJECT_DIR$/json-files/existed-employers-in-SJB.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_14.js" />
+        <option value="$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/helper.js" />
         <option value="$PROJECT_DIR$/models/Job.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/main.js" />
       </list>
     </option>
   </component>
@@ -349,6 +347,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json-files" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,12 +513,12 @@
       <workItem from="1496204399925" duration="7322000" />
       <workItem from="1496279902974" duration="35804000" />
       <workItem from="1496579023876" duration="85000" />
-      <workItem from="1496626481237" duration="13691000" />
+      <workItem from="1496626481237" duration="29162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268257000" />
+    <option name="totallyTimeSpent" value="283728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,11 +538,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4553846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,7 +551,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -558,27 +570,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1629</line>
+          <line>1628</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1714</line>
+          <line>1713</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1773</line>
+          <line>1772</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1589</line>
+          <line>1588</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>1469</line>
+          <line>1468</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -589,29 +601,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>212</line>
+          <line>223</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>241</line>
+          <line>239</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/json-files/jobs-list.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12512">
@@ -878,22 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="2771" column="3" lean-forward="true" selection-start-line="2771" selection-start-column="3" selection-end-line="2771" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app-bk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27">
@@ -1063,16 +1052,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_14.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/existed-jobs-in-SJB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Employer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="1250" column="20" lean-forward="false" selection-start-line="1250" selection-start-column="10" selection-end-line="1250" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
+            <element signature="e#2382#32927#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="n#!!block;n#writeJSON#0" expanded="false" />
+            <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
+            <element signature="e#43185#45339#0" expanded="false" />
+            <element signature="n#!!block;n#addEmployer#0" expanded="false" />
+            <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
+            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
+            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
+            <marker date="1496721353000" expanded="true" signature="63945:63949" ph="&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="869" column="2" lean-forward="true" selection-start-line="869" selection-start-column="2" selection-end-line="869" selection-end-column="2" />
+        <state relative-caret-position="-35">
+          <caret line="803" column="42" lean-forward="false" selection-start-line="803" selection-start-column="42" selection-end-line="803" selection-end-column="42" />
           <folding>
             <element signature="e#48#530#0" expanded="false" />
             <element signature="e#283#488#0" expanded="false" />
             <element signature="e#355#478#0" expanded="false" />
             <element signature="e#572#824#0" expanded="false" />
-            <element signature="e#858#36593#0" expanded="false" />
             <element signature="e#1085#1312#0" expanded="false" />
             <element signature="e#1143#1302#0" expanded="false" />
             <element signature="e#1231#1288#0" expanded="false" />
@@ -1105,74 +1150,42 @@
             <element signature="e#34096#34298#0" expanded="false" />
             <element signature="e#34326#34999#0" expanded="false" />
             <element signature="e#34394#34985#0" expanded="false" />
-            <element signature="e#35029#35472#0" expanded="false" />
-            <element signature="e#35120#35462#0" expanded="false" />
-            <element signature="e#35222#35448#0" expanded="false" />
-            <element signature="e#35345#35430#0" expanded="false" />
-            <element signature="e#35603#36227#0" expanded="false" />
-            <element signature="e#35675#35778#0" expanded="false" />
-            <element signature="e#36010#36062#0" expanded="false" />
-            <element signature="e#36068#36176#0" expanded="false" />
-            <element signature="e#36100#36162#0" expanded="false" />
-            <element signature="e#36285#36567#0" expanded="false" />
-            <element signature="e#36408#36519#0" expanded="false" />
-            <element signature="e#36630#37056#0" expanded="false" />
-            <element signature="e#36795#37010#0" expanded="false" />
-            <element signature="e#36915#36974#0" expanded="false" />
-            <element signature="e#37016#37050#0" expanded="false" />
-            <element signature="e#37094#37508#0" expanded="false" />
-            <element signature="e#37304#37483#0" expanded="false" />
-            <element signature="e#37355#37473#0" expanded="false" />
-            <element signature="e#37405#37459#0" expanded="false" />
-            <element signature="e#37555#37902#0" expanded="false" />
+            <element signature="e#35710#35813#0" expanded="false" />
+            <element signature="e#36056#36108#0" expanded="false" />
+            <element signature="e#36114#36222#0" expanded="false" />
+            <element signature="e#36146#36208#0" expanded="false" />
+            <element signature="e#36331#36613#0" expanded="false" />
+            <element signature="e#36454#36565#0" expanded="false" />
+            <element signature="e#36676#37102#0" expanded="false" />
+            <element signature="e#36841#37056#0" expanded="false" />
+            <element signature="e#36961#37020#0" expanded="false" />
+            <element signature="e#37062#37096#0" expanded="false" />
+            <element signature="e#37140#37554#0" expanded="false" />
+            <element signature="e#37350#37529#0" expanded="false" />
+            <element signature="e#37401#37519#0" expanded="false" />
+            <element signature="e#37451#37505#0" expanded="false" />
+            <element signature="e#37601#37948#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Job.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="149">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="242" column="65" lean-forward="false" selection-start-line="242" selection-start-column="65" selection-end-line="242" selection-end-column="65" />
+        <state relative-caret-position="43">
+          <caret line="521" column="22" lean-forward="true" selection-start-line="521" selection-start-column="22" selection-end-line="521" selection-end-column="22" />
           <folding>
-            <element signature="e#2859#3194#0" expanded="false" />
-            <element signature="e#3567#4405#0" expanded="false" />
-            <element signature="e#4674#5313#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="1518" column="68" lean-forward="true" selection-start-line="1518" selection-start-column="68" selection-end-line="1518" selection-end-column="68" />
-          <folding>
-            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-            <element signature="e#2382#32927#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-            <element signature="n#!!block;n#writeJSON#0" expanded="false" />
-            <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
-            <element signature="e#43185#45339#0" expanded="false" />
-            <marker date="1496717536000" expanded="true" signature="64009:64013" ph="&gt;" />
+            <element signature="e#5705#8063#0" expanded="false" />
+            <element signature="n#!!block;n#compareEpl#0" expanded="false" />
+            <element signature="n#!!block;n#compareJob#0" expanded="false" />
+            <element signature="e#11357#12702#0" expanded="false" />
           </folding>
         </state>
       </provider>

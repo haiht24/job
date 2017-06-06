@@ -1465,7 +1465,6 @@ function buildJSON_existedJobs_inSJB() {
                 var filePath = defaultDir + 'existed-jobs-in-SJB.json';
                 fs.writeFile(filePath, json, null, function () {
                     console.log('done write to file: %s', filePath);
-                    console.log('quit app now');process.exit();
                     console.time('get100Epl');
                     buildJSON_existedEmployers_inSJB();
                 });
@@ -1782,8 +1781,12 @@ function sliceAndContinueAddJob() {
 // testAddJob();
 
 // first of all step
-console.time('get100Jobs');
-buildJSON_existedJobs_inSJB();
+// console.time('get100Jobs');
+// buildJSON_existedJobs_inSJB();
+
+// step 2 build json epl existed in sjb
+console.time('get100Epl');
+buildJSON_existedEmployers_inSJB();
 
 // skip to step 2
 // console.time('get100Epl');
