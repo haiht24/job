@@ -50,8 +50,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5566">
-              <caret line="1250" column="20" lean-forward="false" selection-start-line="1250" selection-start-column="10" selection-end-line="1250" selection-end-column="20" />
+            <state relative-caret-position="162">
+              <caret line="1784" column="33" lean-forward="true" selection-start-line="1784" selection-start-column="33" selection-end-line="1784" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#randomEmail#0" expanded="false" />
                 <element signature="n#!!block;n#extractFileName#0" expanded="false" />
@@ -65,8 +65,6 @@
                 <element signature="e#43185#45339#0" expanded="false" />
                 <element signature="n#!!block;n#addEmployer#0" expanded="false" />
                 <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
-                <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
-                <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
                 <element signature="n#!!block;n#updateInserted#0" expanded="false" />
                 <marker date="1496721353000" expanded="true" signature="63945:63949" ph="&gt;" />
               </folding>
@@ -74,10 +72,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="1784" column="30" lean-forward="true" selection-start-line="1784" selection-start-column="30" selection-end-line="1784" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="467" column="38" lean-forward="true" selection-start-line="467" selection-start-column="38" selection-end-line="467" selection-end-column="38" />
+              <folding>
+                <element signature="e#7204#7626#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_15.js" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_15.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="70" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="helper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
+            <state relative-caret-position="72">
               <caret line="803" column="42" lean-forward="false" selection-start-line="803" selection-start-column="42" selection-end-line="803" selection-end-column="42" />
               <folding>
                 <element signature="e#48#530#0" expanded="false" />
@@ -139,12 +169,11 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="530" column="0" lean-forward="true" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+            <state relative-caret-position="509">
+              <caret line="569" column="15" lean-forward="false" selection-start-line="569" selection-start-column="15" selection-end-line="569" selection-end-column="15" />
               <folding>
                 <element signature="e#5705#8063#0" expanded="false" />
                 <element signature="n#!!block;n#compareEpl#0" expanded="false" />
-                <element signature="n#!!block;n#compareJob#0" expanded="false" />
                 <element signature="e#11357#12702#0" expanded="false" />
               </folding>
             </state>
@@ -155,8 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>buildJSON_existedJobs_inSJB</find>
-      <find>getEplDetailAndInsert</find>
       <find>console.log</find>
       <find>module</find>
       <find>getListJobs</find>
@@ -173,18 +200,20 @@
       <find>originPath</find>
       <find>randomEmail</find>
       <find>cpnName</find>
-      <find>getAndInsertJobToMongo</find>
       <find>extractEmails</find>
       <find>addJobsToSJB()</find>
       <find>addJobToSmartJob</find>
       <find>extractWebsite</find>
       <find>dataCleaned</find>
       <find>limit</find>
-      <find>insertEmployersToMongoDb</find>
       <find>Job ex</find>
       <find>Jb</find>
       <find>length</find>
+      <find>insertEmployersToMongoDb</find>
+      <find>getAndInsertJobToMongo</find>
       <find>addNewEplToSJB</find>
+      <find>compare</find>
+      <find>description</find>
     </findStrings>
     <replaceStrings>
       <replace>buildJSONJob</replace>
@@ -248,7 +277,6 @@
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/.git/config" />
         <option value="$PROJECT_DIR$/json-files/array-jobs-will-add-to-wordpress.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/smart-job-board.js" />
         <option value="$PROJECT_DIR$/start.js" />
         <option value="$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json" />
@@ -260,7 +288,6 @@
         <option value="$PROJECT_DIR$/json-files/trackingJobsInserted.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.js" />
         <option value="$PROJECT_DIR$/prepare.js" />
-        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js" />
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/json-files/existed-jobs-in-SJB.json" />
         <option value="$PROJECT_DIR$/models/Employer.js" />
         <option value="$PROJECT_DIR$/json-files/existed-employers-in-SJB.json" />
@@ -269,6 +296,9 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/helper.js" />
         <option value="$PROJECT_DIR$/models/Job.js" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/main.js" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_15.js" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -512,12 +542,12 @@
       <workItem from="1496279902974" duration="35804000" />
       <workItem from="1496579023876" duration="85000" />
       <workItem from="1496626481237" duration="29427000" />
-      <workItem from="1496800288457" duration="17000" />
+      <workItem from="1496800288457" duration="5147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284010000" />
+    <option name="totallyTimeSpent" value="289140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,7 +570,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20769231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -607,19 +637,24 @@
           <line>239</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js</url>
+          <line>504</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>remoteDeploymentFS://&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/app.js</url>
+          <line>501</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/json-files/link-jobs-will-crawl-data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12512">
-          <caret line="544" column="1" lean-forward="true" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Employer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -923,34 +958,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/models/Job.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5566">
-          <caret line="1250" column="20" lean-forward="false" selection-start-line="1250" selection-start-column="10" selection-end-line="1250" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
-            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
-            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
-            <element signature="e#2382#32927#0" expanded="false" />
-            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
-            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
-            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
-            <element signature="n#!!block;n#writeJSON#0" expanded="false" />
-            <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
-            <element signature="e#43185#45339#0" expanded="false" />
-            <element signature="n#!!block;n#addEmployer#0" expanded="false" />
-            <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedJobs_inSJB#0" expanded="false" />
-            <element signature="n#!!block;n#buildJSON_existedEmployers_inSJB#0" expanded="false" />
-            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
-            <marker date="1496721353000" expanded="true" signature="63945:63949" ph="&gt;" />
-          </folding>
+        <state relative-caret-position="552">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
+        <state relative-caret-position="72">
           <caret line="803" column="42" lean-forward="false" selection-start-line="803" selection-start-column="42" selection-end-line="803" selection-end-column="42" />
           <folding>
             <element signature="e#48#530#0" expanded="false" />
@@ -1008,22 +1026,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Job.js">
+    <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="162">
+          <caret line="1784" column="33" lean-forward="true" selection-start-line="1784" selection-start-column="33" selection-end-line="1784" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!block;n#randomEmail#0" expanded="false" />
+            <element signature="n#!!block;n#extractFileName#0" expanded="false" />
+            <element signature="n#!!block;n#dataCleaned#0" expanded="false" />
+            <element signature="e#2382#32927#0" expanded="false" />
+            <element signature="n#!!block;n#extractEmails#0" expanded="false" />
+            <element signature="n#!!block;n#extractWebsite#0" expanded="false" />
+            <element signature="n#!!block;n#getParameterByName#0" expanded="false" />
+            <element signature="n#!!block;n#writeJSON#0" expanded="false" />
+            <element signature="n#!!block;n#insertEmployersToMongoDb#0" expanded="false" />
+            <element signature="e#43185#45339#0" expanded="false" />
+            <element signature="n#!!block;n#addEmployer#0" expanded="false" />
+            <element signature="n#!!block;n#schedulerBuildJSONJobs#0" expanded="false" />
+            <element signature="n#!!block;n#updateInserted#0" expanded="false" />
+            <marker date="1496721353000" expanded="true" signature="63945:63949" ph="&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_15.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="70" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="530" column="0" lean-forward="true" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+        <state relative-caret-position="509">
+          <caret line="569" column="15" lean-forward="false" selection-start-line="569" selection-start-column="15" selection-end-line="569" selection-end-column="15" />
           <folding>
             <element signature="e#5705#8063#0" expanded="false" />
             <element signature="n#!!block;n#compareEpl#0" expanded="false" />
-            <element signature="n#!!block;n#compareJob#0" expanded="false" />
             <element signature="e#11357#12702#0" expanded="false" />
           </folding>
         </state>

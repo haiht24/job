@@ -510,6 +510,20 @@ function addNewJobToSJB() {
                         console.log('Code %s', res.statusCode);
                         console.log('#########################Data sending###############################');
                         console.log(data);
+                        console.log('#########################API response###############################');
+                        console.log(body);
+
+                        // If error, do not insert to sjb, update sjbId = -1
+                        Jb.update({jobId: job.jobId},
+                            {$set: {sjbId: -1}},
+                            function (err) {
+                                if(err) throw err;
+                                console.log('No insert, this job maybe invalid sjb employer id');
+
+                                // De quy, tiep tuc tim job moi trong mongo va add vao sjb
+                                addNewJobToSJB();
+                            }
+                        )
                     }
                 });
 
@@ -518,11 +532,30 @@ function addNewJobToSJB() {
     }
 }
 
+// Delete sjb job
+function deleteSJBJob() {
+    var arrSJBId = [33467,33468,33469,33470,33471,33472,33473,33474,33475,33476,33477,33478,33479,33480];
+    var originPath = 'https://health.mysmartjobboard.com/api/';
+    var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
+    for(var i = 0; i < arrSJBId.length; i++){
+        var id = arrSJBId[i];
+        var url = originPath + 'jobs/'+id+'?api_key=' + apiKey;
+        request({
+            method: 'DELETE', url: url
+        }, function (err, res, body) {
+            if(err) throw err;
+            if (!err && res.statusCode === 204) {
+                console.log('delete success');
+            }
+        })
+    }
+}
+
 /* Run code */
 /* Chay tu dau tien */
-console.time('TongThoiGian');
-console.time('getListEpl');
-insertEmployersToMongoDb(true);
+// console.time('TongThoiGian');
+// console.time('getListEpl');
+// insertEmployersToMongoDb(true);
 /* End */
 
 /* Chay tach roi */
@@ -534,3 +567,4 @@ insertEmployersToMongoDb(true);
 
 // addNewEplToSJB(true);
 // addNewJobToSJB();
+deleteSJBJob();
