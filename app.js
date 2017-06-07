@@ -520,9 +520,9 @@ function addNewJobToSJB() {
 
 /* Run code */
 /* Chay tu dau tien */
-// console.time('TongThoiGian');
-// console.time('getListEpl');
-// insertEmployersToMongoDb(true);
+console.time('TongThoiGian');
+console.time('getListEpl');
+insertEmployersToMongoDb(true);
 /* End */
 
 /* Chay tach roi */
