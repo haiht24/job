@@ -557,9 +557,9 @@ function deleteSJBJob() {
 
 /* Run code */
 /* Chay tu dau tien */
-console.time('TongThoiGian');
-console.time('getListEpl');
-insertEmployersToMongoDb(true);
+// console.time('TongThoiGian');
+// console.time('getListEpl');
+// insertEmployersToMongoDb(true);
 /* End */
 
 /* Chay tach roi */
@@ -571,3 +571,12 @@ insertEmployersToMongoDb(true);
 
 // addNewEplToSJB(true);
 // addNewJobToSJB();
+
+// Dat lich auto
+function automatic() {
+    console.time('TongThoiGian');
+    console.time('getListEpl');
+    insertEmployersToMongoDb(true);
+}
+var cron = require('node-cron');
+cron.schedule('0 */3 * * *', automatic);
