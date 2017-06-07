@@ -539,12 +539,16 @@ function deleteSJBJob() {
     var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
     for(var i = 0; i < arrSJBId.length; i++){
         var id = arrSJBId[i];
+        del(id);
+    }
+    function del(id) {
         var url = originPath + 'jobs/'+id+'?api_key=' + apiKey;
         request({
             method: 'DELETE', url: url
         }, function (err, res, body) {
             if(err) throw err;
-            if (!err && res.statusCode === 204) {
+            console.log(res.statusCode);
+            if (!err && res.statusCode === 200) {
                 console.log('delete success');
             }
         })
@@ -553,9 +557,9 @@ function deleteSJBJob() {
 
 /* Run code */
 /* Chay tu dau tien */
-// console.time('TongThoiGian');
-// console.time('getListEpl');
-// insertEmployersToMongoDb(true);
+console.time('TongThoiGian');
+console.time('getListEpl');
+insertEmployersToMongoDb(true);
 /* End */
 
 /* Chay tach roi */
@@ -567,4 +571,3 @@ function deleteSJBJob() {
 
 // addNewEplToSJB(true);
 // addNewJobToSJB();
-deleteSJBJob();

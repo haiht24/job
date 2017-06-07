@@ -21,7 +21,7 @@ module.exports = {
     },
     dataCleaned: function (job) {
         // match job type
-        var arrJobType = ['Full Time', 'Part Time', 'Contractor', 'Intern', 'Seasonal', 'Volunteer', 'Internship'];
+        var arrJobType = ['Full Time', 'Part Time', 'Contractor', 'Intern', 'Seasonal', 'Volunteer', 'Internship', 'Freelance', 'Temporary', 'Permanent'];
         var jobType = job.type;
         var strJobTypes = '';
         if (jobType) {
@@ -800,7 +800,6 @@ module.exports = {
             }
         }
 
-        // job.specialty = [];
         job.catsConverted = catsConverted;
         // remove text Show Contact Details from description
         if (job.description) {
