@@ -1,3 +1,8 @@
+// Smart job board API key
+var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
+var originPath = 'https://health.mysmartjobboard.com/api/';
+var request = require('request');
+
 module.exports = {
     randomEmail: function () {
         var text = "";
@@ -866,5 +871,102 @@ module.exports = {
         if (!results) return null;
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, " "));
+    },
+    buildJSON_existedJobs_inSJB: function () {
+        var page = 1;
+        var arrExistedJobs = [];
+
+        function build() {
+            var limit = 100, query = '', location = '', category = '';
+            var url = originPath + 'jobs?limit=' + limit + '&page=' + page + '&api_key=' + apiKey;
+            console.log('page %s | arrExistedJobs.length: %s | limit %s | url: %s', page, arrExistedJobs.length, limit, url);
+            request(url, function (error, response, body) {
+                if (response.statusCode !== 200) {
+                    console.log('Error code %s', response.statusCode);
+                    console.log(body);
+                    process.exit();
+                }
+
+                body = JSON.parse(body);
+                var jobs = body.jobs;
+                if (jobs.length === 0) {
+                    var fs = require('node-fs');
+                    var json = JSON.stringify(arrExistedJobs);
+                    var filePath = defaultDir + 'existed-jobs-in-SJB.json';
+                    fs.writeFile(filePath, json, null, function () {
+                        console.log('done write to file: %s', filePath);
+                        console.time('get100Epl');
+                        this.buildJSON_existedJobs_inSJB();
+                    });
+                    return;
+                }
+                for (var i = 0; i < jobs.length; i++) {
+                    var j = jobs[i];
+                    var customFields = j.custom_fields;
+                    var e = {sourceJobId: '', sourceEplId: '', ejbJobId: j.id};
+                    for (var k = 0; k < customFields.length; k++) {
+                        var ctf = customFields[k];
+                        if (ctf.name === 'Source Job Id')
+                            e.sourceJobId = ctf.value;
+                        else if (ctf.name === 'Source Employer Id')
+                            e.sourceEplId = ctf.value;
+                    }
+                    arrExistedJobs.push(e);
+                }
+                page++;
+                build();
+                console.log(arrExistedJobs.length);
+                console.timeEnd('get100Jobs');
+            });
+        }
+        build();
+    },
+    buildJSON_existedEmployers_inSJB: function () {
+        var pageEpl = 1;
+        var arrEpl = [];
+
+        function build() {
+            var limit = 100;
+            var url = originPath + 'employers?limit=' + limit + '&page=' + pageEpl + '&api_key=' + apiKey;
+            console.log('page %s | arrEpl.length: %s | limit %s | url: %s', pageEpl, arrEpl.length, limit, url);
+            request(url, function (error, response, body) {
+                if (response.statusCode !== 200) {
+                    console.log('Error code %s', response.statusCode);
+                    console.log(body);
+                    process.exit();
+                }
+
+                body = JSON.parse(body);
+                var employers = body.employers;
+                if (employers.length === 0) {
+                    var fs = require('node-fs');
+                    var json = JSON.stringify(arrEpl);
+                    filePath = defaultDir + 'existed-employers-in-SJB.json';
+                    fs.writeFile(filePath, json, null, function () {
+                        console.log('done write to file: %s', filePath);
+                        // start();
+                    });
+                    return;
+                }
+                for (var i = 0; i < employers.length; i++) {
+                    var j = employers[i];
+                    var customFields = j.custom_fields;
+                    var e = {sourceEplId: '', url: '', sjbEplId: j.id};
+                    for (var k = 0; k < customFields.length; k++) {
+                        var ctf = customFields[k];
+                        if (ctf.name === 'Source Employer Id')
+                            e.sourceEplId = ctf.value;
+                        else if (ctf.name === 'Source Url')
+                            e.url = ctf.value;
+                    }
+                    arrEpl.push(e);
+                }
+                pageEpl++;
+                build();
+                console.log(arrEpl.length);
+                console.timeEnd('get100Epl');
+            });
+        }
+        build();
     }
 };
