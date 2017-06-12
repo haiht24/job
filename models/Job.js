@@ -22,7 +22,7 @@ var jobSchema = new Schema({
 jobSchema.pre('save', function(next) {
     var self = this;
     JobModel.find({jobId : self.jobId}, function (err, docs) {
-        if (!docs.length){
+        if (typeof docs !== 'undefined' && docs.length === 0){
             next();
         }else{
             console.log('Job exists: ', self.title);
