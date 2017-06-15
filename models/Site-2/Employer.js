@@ -30,5 +30,5 @@ employerSchema.pre('save', function(next) {
         }
     });
 });
-var EmployerModel = mongoose.model('Employers', employerSchema);
+var EmployerModel = mongoose.model('Employers-2', employerSchema);
 module.exports = EmployerModel;

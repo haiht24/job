@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="beb92081-7d26-4191-ae5e-cbabdabdc51a" name="GCE Apache Of HaiHT" url="http://104.155.206.237">
-        <fileTransfer host="104.155.206.237" port="22" privateKey="$USER_HOME$/.ssh/google_compute_engine" rootFolder="/home/haiht/" accessType="SFTP" keyPair="true">
+      <webServer id="beb92081-7d26-4191-ae5e-cbabdabdc51a" name="GCE Apache Of HaiHT" url="http://35.194.140.48">
+        <fileTransfer host="35.194.140.48" port="22" privateKey="$USER_HOME$/.ssh/google_compute_engine" rootFolder="/home/haiht/" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

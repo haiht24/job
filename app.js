@@ -555,16 +555,42 @@ function deleteSJBJob() {
     }
 }
 
-/* Run code */
 /* Chay tu dau tien */
 // console.time('TongThoiGian');
 // console.time('getListEpl');
 // insertEmployersToMongoDb(true);
 /* End */
 
-/* Chay tach roi */
+/* ******************************************************* */
+/* Neu co loi, chay theo cac buoc sau
+ * 0. Build json epl va job da ton tai trong Smartjobboard
+ * 1.insertEmployersToMongoDb() : lay epl tu source va insert vao mongodb
+ * 2.getAndInsertJobToMongo() : lay jobs tu source va insert vao mongodb theo epl
+ * 3. compareEpl() va compareJob() de so sanh xem epl va job da co tren Smartjobboard hay chua, neu co thi lay sjbId update nguoc vao mongodb
+ * */
 
+//step 0
+var helper = require('./helper.js');
+console.time('get100Epl');
+console.time('get100Jobs');
+helper.buildJSON_existedJobs_inSJB();
+helper.buildJSON_existedEmployers_inSJB();
+
+//step 1
+// console.time('getListEpl');
+// insertEmployersToMongoDb(false);
+
+//step 2
+// console.time('buildUrlJobDetail');
 // getAndInsertJobToMongo();
+
+//step 3
+// compareEpl();
+// compareJob();
+
+/* ******************************************************* */
+
+
 
 // compareEpl();
 // compareJob();
@@ -573,10 +599,10 @@ function deleteSJBJob() {
 // addNewJobToSJB();
 
 // Dat lich auto
-function automatic() {
-    console.time('TongThoiGian');
-    console.time('getListEpl');
-    insertEmployersToMongoDb(true);
-}
-var cron = require('node-cron');
-cron.schedule('0 */3 * * *', automatic);
+// function automatic() {
+//     console.time('TongThoiGian');
+//     console.time('getListEpl');
+//     insertEmployersToMongoDb(true);
+// }
+// var cron = require('node-cron');
+// cron.schedule('0 */6 * * *', automatic);

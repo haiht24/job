@@ -2,6 +2,7 @@
 var apiKey = 'f59b583aa1b4ada293a40f17c10adabc';
 var originPath = 'https://health.mysmartjobboard.com/api/';
 var request = require('request');
+var defaultDir = './json-files/';
 
 module.exports = {
     randomEmail: function () {
