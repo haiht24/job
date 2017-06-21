@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Site-2/Job.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app-2.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nm.js" afterPath="$PROJECT_DIR$/nm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,11 +146,9 @@
       <file leaf-file-name="nm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+            <state relative-caret-position="369">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
-                <element signature="n#!!block;n#getJobUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
-                <element signature="n#!!block;n#removeAndNextEplUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
                 <element signature="n#!!block;n#getProxy#0" expanded="false" />
               </folding>
             </state>
@@ -533,12 +527,12 @@
       <workItem from="1497233571927" duration="31021000" />
       <workItem from="1497791493628" duration="30000" />
       <workItem from="1497858382318" duration="17549000" />
-      <workItem from="1498008131241" duration="2779000" />
+      <workItem from="1498008131241" duration="2814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353355000" />
+    <option name="totallyTimeSpent" value="353390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -920,11 +914,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+        <state relative-caret-position="369">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#getJobUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
-            <element signature="n#!!block;n#removeAndNextEplUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
             <element signature="n#!!block;n#getProxy#0" expanded="false" />
           </folding>
         </state>
