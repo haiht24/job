@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2bba6c-9183-49a1-8dfa-12090029f22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Site-2/Employer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/healthecareers.js" afterPath="$PROJECT_DIR$/app-2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Site-2/Job.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app-2.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helper.js" afterPath="$PROJECT_DIR$/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employer.js" afterPath="$PROJECT_DIR$/models/Employer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nm.js" afterPath="$PROJECT_DIR$/nm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +33,8 @@
       <file leaf-file-name="Employer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Employer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="115">
+              <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -46,18 +43,18 @@
       <file leaf-file-name="Employer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Site-2/Employer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="644">
+              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+            <state relative-caret-position="92">
+              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
               <folding>
                 <element signature="e#253#735#0" expanded="false" />
                 <element signature="e#488#693#0" expanded="false" />
@@ -116,16 +113,13 @@
                 <element signature="e#37614#37732#0" expanded="false" />
                 <element signature="e#37664#37718#0" expanded="false" />
                 <element signature="e#37814#38161#0" expanded="false" />
+                <element signature="e#38208#40360#0" expanded="false" />
                 <element signature="e#38698#38863#0" expanded="false" />
                 <element signature="e#39240#39447#0" expanded="false" />
                 <element signature="e#39550#40163#0" expanded="false" />
                 <element signature="e#39791#40101#0" expanded="false" />
                 <element signature="e#40412#42422#0" expanded="false" />
-                <element signature="e#40490#42399#0" expanded="false" />
-                <element signature="e#40799#42387#0" expanded="false" />
                 <element signature="e#40850#41015#0" expanded="false" />
-                <element signature="e#41150#41580#0" expanded="false" />
-                <element signature="e#41400#41532#0" expanded="false" />
                 <element signature="e#41640#42231#0" expanded="false" />
                 <element signature="e#41878#42177#0" expanded="false" />
               </folding>
@@ -136,28 +130,42 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="455" column="72" lean-forward="true" selection-start-line="455" selection-start-column="72" selection-end-line="455" selection-end-column="72" />
+            <state relative-caret-position="368">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nm.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Job.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Site-2/Job.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="118" column="59" lean-forward="true" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="346">
+              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!block;n#getJobUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
+                <element signature="n#!!block;n#removeAndNextEplUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
+                <element signature="n#!!block;n#getProxy#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="existed-employers-in-SJB.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+      <file leaf-file-name="proxies.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json-files/proxies.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="184">
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -167,16 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Jb</find>
-      <find>length</find>
-      <find>insertEmployersToMongoDb</find>
-      <find>compare</find>
-      <find>description</find>
-      <find>api</find>
-      <find>var originPath</find>
-      <find>addNewJobToSJB</find>
-      <find>Update back to mongo success</find>
-      <find>addNewEplToSJB</find>
       <find>request</find>
       <find>originPath</find>
       <find>.json</find>
@@ -194,9 +192,19 @@
       <find>console.timeEnd</find>
       <find>compareEpl</find>
       <find>helper</find>
-      <find>defaultDir</find>
-      <find>getJobUrl</find>
       <find>default</find>
+      <find>get100Jobs</find>
+      <find>write</find>
+      <find>node-fs</find>
+      <find>defaultDir</find>
+      <find>94.177.236.239</find>
+      <find>https</find>
+      <find>ket thuc crawl epl nay</find>
+      <find>required</find>
+      <find>getJobUrl</find>
+      <find>userAgent</find>
+      <find>.save</find>
+      <find>freeproxylist</find>
     </findStrings>
     <replaceStrings>
       <replace>insertEmployeers</replace>
@@ -237,8 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.js" />
-        <option value="$PROJECT_DIR$/array-jobs-will-add-to-wordpress.json" />
         <option value="$PROJECT_DIR$/link-jobs-will-crawl-data.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.js" />
@@ -279,15 +285,17 @@
         <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/lich-su-gia/bot-tracker/check.js" />
         <option value="$PROJECT_DIR$/models/Job.js" />
         <option value="$PROJECT_DIR$/models/Employer.js" />
-        <option value="$PROJECT_DIR$/models/Site-2/Employer.js" />
         <option value="$PROJECT_DIR$/app-2.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_16.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.json" />
-        <option value="$PROJECT_DIR$/nm.js" />
-        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/job/app.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="&lt;beb92081-7d26-4191-ae5e-cbabdabdc51a&gt;/job/app.js" />
         <option value="$PROJECT_DIR$/helper.js" />
+        <option value="$PROJECT_DIR$/models/Site-2/Employer.js" />
+        <option value="$PROJECT_DIR$/models/Site-2/Job.js" />
+        <option value="$PROJECT_DIR$/json-files/proxies.json" />
+        <option value="$PROJECT_DIR$/nm.js" />
       </list>
     </option>
   </component>
@@ -340,7 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,22 +374,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="job" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="job" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json-files" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -536,12 +530,15 @@
       <workItem from="1496800288457" duration="10328000" />
       <workItem from="1496886785821" duration="6982000" />
       <workItem from="1497232571487" duration="673000" />
-      <workItem from="1497233571927" duration="21963000" />
+      <workItem from="1497233571927" duration="31021000" />
+      <workItem from="1497791493628" duration="30000" />
+      <workItem from="1497858382318" duration="17549000" />
+      <workItem from="1498008131241" duration="2779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323939000" />
+    <option name="totallyTimeSpent" value="353355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,14 +554,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21324718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15508886" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15508886" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24153847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27384615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5066414" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -612,15 +609,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-bk.js" />
-    <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/check-out-0.log" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -762,41 +750,56 @@
     <entry file="file://$PROJECT_DIR$/main.js" />
     <entry file="file://$PROJECT_DIR$/json-files/array-jobs-will-add-to-SmartJobBoard.json" />
     <entry file="file://$PROJECT_DIR$/smart-job-board.js" />
+    <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/Health-jobs-error-0.log" />
+    <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/Health-job-automatic-error-1.log" />
+    <entry file="file://$PROJECT_DIR$/models/healthecareers.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="31" column="116" lean-forward="true" selection-start-line="31" selection-start-column="116" selection-end-line="31" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/proxy-lists/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="86" column="67" lean-forward="true" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-2.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="189">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/Health-jobs-error-0.log">
+    <entry file="file://$PROJECT_DIR$/models/Employer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/ld/8d2cmsmx4wq7d66465j4ggvc0000gn/T/fz3temp-2/Health-job-automatic-error-1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1198">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/healthecareers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="115">
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -805,78 +808,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Employer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="31" column="116" lean-forward="true" selection-start-line="31" selection-start-column="116" selection-end-line="31" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Site-2/Employer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="644">
+          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-files/existed-employers-in-SJB.json">
+    <entry file="file://$PROJECT_DIR$/models/Site-2/Job.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="713">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm.js">
+    <entry file="file://$PROJECT_DIR$/json-files/proxies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="118" column="59" lean-forward="true" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="455" column="72" lean-forward="true" selection-start-line="455" selection-start-column="72" selection-end-line="455" selection-end-column="72" />
+        <state relative-caret-position="184">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        <state relative-caret-position="92">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
             <element signature="e#253#735#0" expanded="false" />
             <element signature="e#488#693#0" expanded="false" />
@@ -935,18 +897,35 @@
             <element signature="e#37614#37732#0" expanded="false" />
             <element signature="e#37664#37718#0" expanded="false" />
             <element signature="e#37814#38161#0" expanded="false" />
+            <element signature="e#38208#40360#0" expanded="false" />
             <element signature="e#38698#38863#0" expanded="false" />
             <element signature="e#39240#39447#0" expanded="false" />
             <element signature="e#39550#40163#0" expanded="false" />
             <element signature="e#39791#40101#0" expanded="false" />
             <element signature="e#40412#42422#0" expanded="false" />
-            <element signature="e#40490#42399#0" expanded="false" />
-            <element signature="e#40799#42387#0" expanded="false" />
             <element signature="e#40850#41015#0" expanded="false" />
-            <element signature="e#41150#41580#0" expanded="false" />
-            <element signature="e#41400#41532#0" expanded="false" />
             <element signature="e#41640#42231#0" expanded="false" />
             <element signature="e#41878#42177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!block;n#getJobUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
+            <element signature="n#!!block;n#removeAndNextEplUrl#0;n#!!block;n#insertJobsToMongoDb#0" expanded="false" />
+            <element signature="n#!!block;n#getProxy#0" expanded="false" />
           </folding>
         </state>
       </provider>

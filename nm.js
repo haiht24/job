@@ -2,9 +2,11 @@ var Nightmare = require('nightmare');
 var cheerio = require('cheerio');
 var Crawler = require("crawler");
 var userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36";
+var defaultDir = './json-files/';
 
 // Connect Db
 var Epl = require('./models/Site-2/Employer');
+var Job = require('./models/Site-2/Job');
 
 var dbName = 'job-sjb';
 var strConnection = 'mongodb://127.0.0.1:27017/' + dbName;
@@ -47,6 +49,7 @@ function insertEmployersToMongoDb() {
                     if(findId){
                         eplId = findId[0];
                         eplId = eplId.replace('co_display_name=', '');
+                        urlAllJobs += '#co_display_name=' + eplId;
                     }
                 }
                 var logo = t.find('.rcol1 img').attr('src') ? t.find('.rcol1 img').attr('src') : '';
@@ -78,29 +81,50 @@ function insertEmployersToMongoDb() {
     crlByLetters.on('drain', function () {
         console.log(arrEpls.length);
         insertJobsToMongoDb(arrEpls);
-        // process.exit();
     });
 }
 
 function insertJobsToMongoDb(arrEpls) {
+    // var prx = require('./json-files/proxies.json');
+    // var proxyServer = prx[0].ipAddress + ':' + prx[0].port;
+    // console.log('proxy now %s', proxyServer);
+
     var arrJobUrls = [];
     var option = {
         show: true,
         // openDevTools: {
         //     mode: 'detach'
+        // },
+        // switches: {
+        //     'proxy-server': proxyServer
         // }
     };
     var nm = Nightmare(option);
-    function getJobUrl(start) {
+    function getJobUrl(start, changeProxy) {
         if(typeof start === 'undefined')
             start = 10;
-        // var url = 'http://www.healthjobsnationwide.com/index.php?action=show_all&co_display_name=18540#co_display_name=18540';
         var url = arrEpls[0];
-        url += '&start=' + start;
-        nm.useragent(userAgent).goto(url).wait().evaluate(function () {return document.body.innerHTML;})
+        url = 'http://www.healthjobsnationwide.com/index.php?action=show_all&pID=';
+        // url += '&start=' + start;
+        url += '#start=' + start;
+        console.log('url now: %s', url);
+
+        // Change proxy when error
+        // if(changeProxy === true){
+        //     proxyServer = prx[0].ipAddress + ':' + prx[0].port;
+        //     console.log('Change to proxy %s', proxyServer);
+        //     option = {
+        //         show: true,
+        //         switches: {
+        //             'proxy-server': proxyServer
+        //         }
+        //     };
+        //     nm = Nightmare(option);
+        // }
+
+        nm.useragent(userAgent).goto(url).wait('.searchtd1').evaluate(function () {return document.body.innerHTML;})
             // .end()
             .then(function (result) {
-                console.log(url);
                 var $ = cheerio.load(result);
                 var box = $('.searchtd1');
                 if(box.length > 0){
@@ -119,42 +143,162 @@ function insertJobsToMongoDb(arrEpls) {
                     arrJobUrls = arrJobUrls.concat(unique);
                     console.log('found job %s', unique.length);
                     console.log('current count arrJobUrls', arrJobUrls.length);
-                    // Neu 1 page co chinh xac 10 ket qua thi moi chuyen sang page tiep theo
-                    if(unique.length === 10){
-                        start += 10;
-                        getJobUrl(start);
-                    }else{
-                        console.log('ket thuc crawl epl nay');
-                        process.exit();
-                        // Neu 1 page co it hon 10 kq thi chuyen sang epl tiep theo, remove index 0
-                        if(arrEpls.length > 1){
-                            arrEpls.splice(0,1);
-                        }
 
-                        if(arrEpls.length > 0){
-                            // getJobUrl();
+                    if(unique.length > 0){
+                        // Save job url to mongo
+                        for(var i = 0; i < unique.length; i++){
+                            var _url = unique[i];
+                            var objJob = new Job({url: _url});
+                            objJob.save(function (err) {
+                                if(err) throw err;
+                            });
+                        }
+                        // Neu 1 page co chinh xac 10 ket qua thi moi chuyen sang page tiep theo
+                        // if(unique.length === 10){
+                        if(unique.length > 0){
+                            start += 10;
+                            getJobUrl(start);
+                        }else{
+                            console.log('ket thuc crawl epl nay');
+                            process.exit();
+                            // Neu 1 page co it hon 10 kq thi chuyen sang epl tiep theo, remove index 0
+                            removeAndNextEplUrl(arrEpls);
                         }
                     }
                 }else{
-                    console.log('arrJobUrls %s',arrJobUrls);
-                    console.log(arrJobUrls.length);
+                    console.log('box not found. Next url');
+                    console.log('current url: %s', url);
+                    console.log('arrJobUrls.length %s',arrJobUrls.length);
 
                     // Neu page nay ko co kq thi chuyen sang epl tiep theo
-                    if(arrEpls.length > 1){
-                        arrEpls.splice(0,1);
-                    }
-
-                    if(arrEpls.length > 0){
-                        // getJobUrl();
-                    }
+                    removeAndNextEplUrl(arrEpls);
                 }
             })
             .catch(function (error) {
                 console.error(error);
+                process.exit();
+                // prx.splice(0, 1);
+                // nm.end();
+                // getJobUrl(start, true);
             });
     }
-    getJobUrl();
+    function removeAndNextEplUrl(arrEpls) {
+        console.log('remove %s', arrEpls[0]);
+        if(arrEpls.length > 1){
+            arrEpls.splice(0, 1);
+        }
+        console.log('next is %s', arrEpls[0]);
+        console.log('Remain arrEpls.length %s', arrEpls.length);
+
+        if(arrEpls.length > 0){
+            getJobUrl();
+        }
+    }
+
+    function _getJobAll(start) {
+        if(typeof start === 'undefined')
+            start = 10;
+        url = 'http://www.healthjobsnationwide.com/index.php?action=show_all&pID=';
+        url += '#start=' + start;
+        console.log('url now: %s', url);
+        nm.useragent(userAgent).goto(url).wait('.searchtd1').evaluate(function () {return document.body.innerHTML;})
+            .then(function (result) {
+                var $ = cheerio.load(result);
+                var box = $('.searchtd1');
+                if(box.length > 0){
+                    var tempArr = [];
+                    box.each(function (i,el) {
+                        var t = $(this);
+                        if(t.find('.showvisited').length > 0) {
+                            var jobUrl = t.find('.showvisited').attr('href');
+                            tempArr.push(jobUrl);
+                        }
+                    });
+                    // remove duplicate url
+                    var unique = tempArr.filter(function(elem, index, self) {
+                        return index === self.indexOf(elem);
+                    });
+                    arrJobUrls = arrJobUrls.concat(unique);
+
+                    console.log('found job %s', unique.length);
+                    console.log('current count arrJobUrls', arrJobUrls.length);
+
+                    if(unique.length > 0){
+                        // Save job url to mongo
+                        for(var i = 0; i < unique.length; i++){
+                            var _url = unique[i];
+                            var objJob = new Job({url: _url});
+                            objJob.save(function (err) {
+                                if(err) throw err;
+                            });
+                        }
+                        // Neu 1 page co ket qua thi moi chuyen sang page tiep theo
+                        if(unique.length > 0){
+                            start += 10;
+                            _getJobAll(start);
+                        }else{
+                            console.log('khong co them job duoc tim thay. Ket thuc');
+                            process.exit();
+                        }
+                    }
+                }else{
+                    console.log('box not found. Next url');
+                    console.log('current url: %s', url);
+                    process.exit();
+                }
+            })
+            .catch(function (error) {
+                console.error(error);
+                process.exit();
+            });
+    }
+
+    // getJobUrl();
+    _getJobAll();
 }
 
-insertEmployersToMongoDb();
-// insertJobsToMongoDb();
+function getProxy() {
+    console.time('getProxy');
+    var ProxyLists = require('proxy-lists');
+
+    var options = {
+        countries: ['us'],
+        bitproxies: {
+            apiKey: 'GCOWR9G8fWalzG1tjQeKM6vRU4H19pzM'
+        },
+        kingproxies: {
+            apiKey: 'e3e36e6755857958654d6ff7970f22'
+        },
+        anonymityLevels: ['elite']
+    };
+    var arr = [];
+
+    // `gettingProxies` is an event emitter object.
+    var gettingProxies = ProxyLists.getProxies(options);
+
+    gettingProxies.on('data', function(proxies) {
+        // Received some proxies.
+        arr = arr.concat(proxies);
+    });
+
+    gettingProxies.on('error', function(error) {
+        // Some error has occurred.
+        console.error(error);
+    });
+
+    gettingProxies.once('end', function() {
+        // Done getting proxies.
+        var fs = require('node-fs');
+        var json = JSON.stringify(arr);
+        var filePath = defaultDir + 'proxies.json';
+        fs.writeFile(filePath, json, null, function () {
+            console.log('done write to file: %s', filePath);
+            console.timeEnd('getProxy');
+            // insertEmployersToMongoDb();
+        });
+    });
+}
+
+// getProxy();
+// insertEmployersToMongoDb();
+insertJobsToMongoDb();

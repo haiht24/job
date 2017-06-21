@@ -12,8 +12,9 @@
     "mongodb": "^2.2.27",
     "mongoose": "^4.9.4",
     "nightmare": "^2.10.0",
+    "node-cron": "^1.1.3",
     "node-fs": "^0.1.7",
-    "request": "^2.65.0",
-    "node-cron": "^1.1.3"
+    "proxy-lists": "^1.11.1",
+    "request": "^2.65.0"
   }
 }
