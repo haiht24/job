@@ -827,12 +827,13 @@ module.exports = {
         }
         // convert job posted date
         if (job.date) {
-            var arrDate = job.date.split('/');
-            var convertedDate = '';
-            if (arrDate.length === 3) {
-                convertedDate = arrDate[2] + '-' + arrDate[0] + '-' + arrDate[1] + ' 00:00:00';
-            }
-            job.date = convertedDate;
+            // var arrDate = job.date.split('/');
+            // var convertedDate = '';
+            // if (arrDate.length === 3) {
+            //     convertedDate = arrDate[2] + '-' + arrDate[0] + '-' + arrDate[1] + ' 00:00:00';
+            // }
+            // job.date = convertedDate;
+            job.date = this.convertDate(job.date);
         }
         return job;
     },
@@ -969,5 +970,50 @@ module.exports = {
             });
         }
         build();
+    },
+    getProxy: function () {
+        console.log('Start get proxy');
+        console.time('getProxy');
+        var ProxyLists = require('proxy-lists');
+        var options = {
+            countries: ['us'],
+            bitproxies: {
+                apiKey: 'GCOWR9G8fWalzG1tjQeKM6vRU4H19pzM'
+            },
+            kingproxies: {
+                apiKey: 'e3e36e6755857958654d6ff7970f22'
+            },
+            anonymityLevels: ['elite']
+        };
+        var arr = [];
+        // `gettingProxies` is an event emitter object.
+        var gettingProxies = ProxyLists.getProxies(options);
+        gettingProxies.on('data', function(proxies) {
+            // Received some proxies.
+            arr = arr.concat(proxies);
+        });
+        gettingProxies.on('error', function(error) {
+            // Some error has occurred.
+            console.error(error);
+        });
+        gettingProxies.once('end', function() {
+            // Done getting proxies.
+            var fs = require('node-fs');
+            var json = JSON.stringify(arr);
+            var filePath = defaultDir + 'proxies.json';
+            fs.writeFile(filePath, json, null, function () {
+                console.log('done write to file: %s', filePath);
+                console.timeEnd('getProxy');
+                // insertEmployersToMongoDb();
+            });
+        });
+    },
+    convertDate: function (strDate) {
+        var arrDate = strDate.split('/');
+        var convertedDate = '';
+        if (arrDate.length === 3) {
+            convertedDate = arrDate[2] + '-' + arrDate[0] + '-' + arrDate[1] + ' 00:00:00';
+        }
+        return convertedDate;
     }
 };

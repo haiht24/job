@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 // create a schema
 var jobSchema = new Schema({
     employerId: Number,
-    jobId: {type: Number},
+    jobId: {type: String},
     title: String,
     description: String,
     location: String,
