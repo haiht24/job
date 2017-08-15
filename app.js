@@ -570,11 +570,11 @@ function deleteSJBJob() {
  * */
 
 //step 0
-var helper = require('./helper.js');
-console.time('get100Epl');
-console.time('get100Jobs');
-helper.buildJSON_existedJobs_inSJB();
-helper.buildJSON_existedEmployers_inSJB();
+// var helper = require('./helper.js');
+// console.time('get100Epl');
+// console.time('get100Jobs');
+// helper.buildJSON_existedJobs_inSJB();
+// helper.buildJSON_existedEmployers_inSJB();
 
 //step 1
 // console.time('getListEpl');
@@ -590,8 +590,6 @@ helper.buildJSON_existedEmployers_inSJB();
 
 /* ******************************************************* */
 
-
-
 // compareEpl();
 // compareJob();
 
@@ -599,10 +597,10 @@ helper.buildJSON_existedEmployers_inSJB();
 // addNewJobToSJB();
 
 // Dat lich auto
-// function automatic() {
-//     console.time('TongThoiGian');
-//     console.time('getListEpl');
-//     insertEmployersToMongoDb(true);
-// }
-// var cron = require('node-cron');
-// cron.schedule('0 */6 * * *', automatic);
+function automatic() {
+    console.time('TongThoiGian');
+    console.time('getListEpl');
+    insertEmployersToMongoDb(true);
+}
+var cron = require('node-cron');
+cron.schedule('0 */6 * * *', automatic);

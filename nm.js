@@ -182,7 +182,13 @@ function updateJobDetailToMongo() {
                 objJob = jobType_1($, thisUrl);
             }else{
                 console.log('type 2');
-                process.exit();
+                if(thisUrl.indexOf('healthjobsnationwide.com') >= 0){
+                    objJob = jobType_2($, thisUrl);
+                }else{
+                    console.log('Other site');
+                    process.exit();
+
+                }
             }
 
             // Get epl id from epl_1 or epl_2
@@ -222,7 +228,8 @@ function updateJobDetailToMongo() {
     });
 
     Job_2.find({
-        title: null
+        title: null,
+        url: {$regex: /healthjobsnationwide.com/}
     }, {url: 1}, function (err, jobs) {
         if(err) throw err;
         if(typeof jobs !== 'undefined' && jobs.length > 0){
@@ -307,6 +314,22 @@ function updateJobDetailToMongo() {
             objJob.eplName = eplName;
         }
         return objJob;
+    }
+
+    function jobType_2($, thisUrl) {
+        var objJob = {};
+        objJob.url = thisUrl;
+        // objJob.description = $('#MainContent_lblComments').html();
+        objJob.title = $('#MainContent_lblPosition').html() || '';
+        objJob.location = $('#MainContent_lblJobState').html() || '';
+        objJob.specialty = $('#MainContent_lblCategory').html() || '';
+        var findJobId = $('#apply_off a').attr('href');
+        findJobId = findJobId.match(/[0-9]+/);
+        objJob.jobId = findJobId[0] || '';
+        objJob.eplName = '';
+        console.log(objJob);
+        process.exit();
+
     }
 }
 
